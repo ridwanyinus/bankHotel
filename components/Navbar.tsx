@@ -14,7 +14,6 @@ const Navbar = () => {
         <a href="/" className="text-white-100 capitalize lg:text-base desktop:text-xl leading-none font-medium z-10 relative">
           BankHotel
         </a>
-        <h1>boyd</h1>
       </div>
 
       <div className="flex gap-x-16 max-xl:hidden">
