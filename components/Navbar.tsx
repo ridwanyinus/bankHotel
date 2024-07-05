@@ -4,12 +4,13 @@ import React from "react";
 import { AiOutlineAlignLeft } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
   const [toggleMenu, settoggleMenu] = useState(false);
 
   return (
-    <nav className="bg-primary flex px-[1.9rem] pt-5 justify-between items-center">
+    <nav className="bg-primary flex px-[1.9rem] pt-5 justify-between items-center mb-0">
       <div>
         <a href="/" className="text-white-100 capitalize lg:text-base desktop:text-xl leading-none font-medium z-10 relative">
           BankHotel
@@ -53,8 +54,20 @@ const Navbar = () => {
                     </li>
                   </ul>
                 ))}
-                <p className="text-center text-white-100 text-xl uppercase pt-8">+38 032 297 50 20</p>
-                <p className="text-center text-white-100 text-xl uppercase pt-4">8 Lystopadovoho Chynu,Lviv</p>
+                <p className="text-center text-white-100 text-xl uppercase pt-8">+(38) 032 297 50 20</p>
+                <p className="text-center text-white-100 text-xl uppercase pt-4">8 Lystopadovoho Chynu, Lviv</p>
+
+                <div className="flex gap-4 justify-center pt-5 *:underline">
+                  <a href="/" className=" text-secondary  uppercase  text-xs">
+                    <FaFacebook size={20} />
+                  </a>
+                  <a href="/" className=" text-secondary  uppercase  text-xs">
+                    <FaInstagram size={20} />
+                  </a>
+                  <a href="/" className=" text-secondary  uppercase  text-xs">
+                    <FaTwitter size={20} />
+                  </a>
+                </div>
               </div>
             </div>
           )}
