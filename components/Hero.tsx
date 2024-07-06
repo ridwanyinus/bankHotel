@@ -15,14 +15,14 @@ const Hero = () => {
           <h1 className="text-white-100 text-[4.7rem] small:text-[5rem] lg:text-[7.5rem] desktop:text-[10.625rem] heading leading-none mb-6 md:mb-8 lg:mb-14 max-md:text-center">
             Bank<span className="text-secondary inline-flex">Hotel</span>
           </h1>
-          <p className="uppercase text-xs md:text-sm desktop:text-lg largesceen:text-[1.625rem] max-md:text-center text-secondary">rooms // restaurant // congress hall // wine bar</p>
+          <p className="uppercase text-xs md:text-sm desktop:text-base largesceen:text-[1.625rem] max-md:text-center text-secondary">rooms // restaurant // congress hall // wine bar</p>
           <div className="border border-white-100 border-opacity-[0.32] block md:hidden w-[60%] mx-auto mt-6"></div>
         </div>
 
-        <div className="h-full flex lg:flex-col justify-between md:gap-x-10 lg:gap-x-0">
+        <div className="h-full flex lg:flex-col justify-between md:gap-x-10 lg:gap-x-0 lg:ml-20 2xl:ml-0">
           <div className="flex justify-between">
-            <div className="text-white-100 lg:text-lg xl:text-xl 2xl:text-[1.375rem] uppercase border border-white-100 border-opacity-[0.32] rounded-full md:px-5 xl:py-3  2xl:py-5 2xl:px-10 flex  items-center gap-x-4 2xl:gap-8 leading-none max-lg:hidden">
-              <Image src={star8} alt="star" className="max-md:w-[30px]" /> since 1973
+            <div className="text-white-100 lg:text-sm  2xl:text-[1.375rem] uppercase border border-white-100 border-opacity-[0.32] rounded-full md:px-5   2xl:py-5 2xl:px-10 flex  items-center gap-x-4 2xl:gap-8 leading-none max-lg:hidden">
+              <Image src={star8} alt="star" className="max-2xl:w-[30px]" /> since 1973
             </div>
 
             <a href="/" className="md:w-[45px] 2xl:w-[4.375rem] max-md:hidden">
@@ -30,7 +30,7 @@ const Hero = () => {
             </a>
           </div>
 
-          <p className="max-md:text-center max-md:mx-auto w-[85%] md:w-[13.625rem] lg:w-[90%] xl:w-[21.875rem] text-white-100 text-sm lg:text-lg largesceen:text-xl leading-[155.556%] max-md:block max-md:mt-6 max-md:leading-[164.286%]">
+          <p className="max-md:text-center max-md:mx-auto w-[85%] md:w-[13.625rem] lg:w-[90%] xl:w-[21.875rem] text-white-100 text-sm lg:text-base largesceen:text-xl leading-[155.556%] max-md:block max-md:mt-6 max-md:leading-[164.286%]">
             The luxurious hotel in the most beautiful European city with an exclusive restaurant, conference-hall, and art-bar.
           </p>
         </div>
@@ -47,12 +47,12 @@ const Hero = () => {
           />
           <div className="absolute top-0 desktop:top-0 right-0 max-lg:hidden bg-[#313F387A]">
             <div className="flex items-center justify-center">
-              <details className="group block [&_summary::-webkit-details-marker  lg:w-[15.5rem] lg:h-[6.25rem] desktop:w-[20rem]  desktop:h-[7.813rem] largesceen:h-[9.375rem]">
+              <details className="group block [&_summary::-webkit-details-marker  lg:w-[15.5rem] lg:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem]">
                 <summary className="flex cursor-pointer px-10  transition  w-full h-full uppercase justify-between items-center">
-                  <span className="text-xs desktop:text-base text-white-100 font-medium leading-[125%]"> Check in </span>
+                  <span className="text-xs 2xl:text-base text-white-100 font-medium leading-[125%]"> Check in </span>
 
                   <span className="transition group-open:-rotate-180">
-                    <Image src={vector4} alt="Vector" />
+                    <Image src={vector4} alt="Vector" className="w-[14px] 2xl:w-[18px]" />
                   </span>
                 </summary>
 
@@ -64,12 +64,12 @@ const Hero = () => {
               </details>
               <Image src={divider} alt="divider" className="h-[64px] " />
 
-              <details className="group block [&_summary::-webkit-details-marker]:hidden  lg:w-[15.5rem] lg:h-[6.25rem] desktop:w-[20rem]  desktop:h-[7.813rem] largesceen:h-[9.375rem]">
+              <details className="group block [&_summary::-webkit-details-marker]:hidden  lg:w-[15.5rem] lg:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem]">
                 <summary className="flex cursor-pointer px-10  transition w-full h-full  uppercase justify-between items-center">
-                  <span className="text-xs desktop:text-base text-white-100 font-medium leading-[125%]"> Check Out </span>
+                  <span className="text-xs 2xl:text-base text-white-100 font-medium leading-[125%]"> Check Out </span>
 
                   <span className="transition group-open:-rotate-180">
-                    <Image src={vector4} alt="Vector" />
+                    <Image src={vector4} alt="Vector" className="w-[14px] 2xl:w-[18px]" />
                   </span>
                 </summary>
 
@@ -80,8 +80,8 @@ const Hero = () => {
                 </div>
               </details>
 
-              <div className="lg:w-[15.5rem] lg:h-[6.25rem] desktop:w-[20rem]  desktop:h-[7.813rem] largesceen:h-[9.375rem] flex  items-center justify-center bg-secondary">
-                <a href="/" className="text-gradient uppercase  text-center text-sm desktop:text-base py-14   w-full mx-auto block ">
+              <div className="lg:w-[15.5rem] lg:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem] flex  items-center justify-center bg-secondary">
+                <a href="/" className="text-gradient uppercase  text-center text-sm 2xl:text-base py-14   w-full mx-auto block ">
                   book room
                 </a>
               </div>
@@ -98,6 +98,19 @@ const Hero = () => {
           </div>
         </div>
       </section>
+
+      <div className="md:flex justify-between mt-12">
+        <div className="max-md:hidden">
+          <p className="text-secondary underline uppercase md:text-xs  lg:text-base 2xl:text-lg largesceen:text-[1.625rem] mb-2">+38 032 297 50 20</p>
+          <p className="text-white-100 underline uppercase md:text-xs  lg:text-base 2xl:text-lg largesceen:text-[1.625rem]">8 Lystopadovoho Chynu, Lviv</p>
+        </div>
+        <div>
+          <p className=" md:text-right text-white-100 text-xs uppercase lg:text-base 2xl:text-lg largesceen:text-[1.625rem]">
+            Art & Congress <br />
+            hall
+          </p>
+        </div>
+      </div>
     </main>
   );
 };

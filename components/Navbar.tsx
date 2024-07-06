@@ -21,7 +21,7 @@ const Navbar = () => {
         {navItems.map((items, idx: number) => (
           <ul key={`link=${idx}`}>
             <li className="flex">
-              <a href={items.link} className="text-white-100 text-sm leading-normal font-normal uppercase hover:text-secondary">
+              <a href={items.link} className="text-white-100 text-xs largesceen:text-sm leading-normal font-normal uppercase hover:text-secondary">
                 {items.name}
               </a>
             </li>
@@ -30,7 +30,7 @@ const Navbar = () => {
       </div>
 
       <div>
-        <p className="text-base text-white-100 leading-none max-xl:hidden">+38 032 297 50 20</p>
+        <p className="text-xs largesceen:text-base text-white-100 leading-none max-xl:hidden">+38 032 297 50 20</p>
       </div>
 
       {/* Mobile Nav */}
