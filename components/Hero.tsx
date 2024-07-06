@@ -9,7 +9,7 @@ import hero from "@/public/space-copenhagen-the-stratford-architonic-rs-8-03-arc
 
 const Hero = () => {
   return (
-    <main className="bg-primary mt-0 py-14 lg:pt-20  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 largesceen:pb-48">
+    <main className="bg-primary mt-0 py-14 lg:pt-20  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44">
       <div className="grid  md:grid-cols-3 lg:grid-cols-3 mb-14 small:mb-16 largesceen:mb-24">
         <div className="md:col-span-2">
           <h1 className="text-white-100 text-[4.7rem] small:text-[5rem] lg:text-[7.5rem] desktop:text-[10.625rem] heading leading-none mb-6 md:mb-8 lg:mb-14 max-md:text-center">
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <section className="w-full ">
+      <section className="">
         <div className="relative ">
           <Image
             src={hero}
@@ -62,7 +62,7 @@ const Hero = () => {
                   <p className=" text-white  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-yellow">DEU</p>
                 </div>
               </details>
-              <Image src={divider} alt="divider" className="h-[64px] " />
+              <Image src={divider} alt="divider" className="h-[64px] w-auto" />
 
               <details className="group block [&_summary::-webkit-details-marker]:hidden  lg:w-[15.5rem] lg:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem]">
                 <summary className="flex cursor-pointer px-10  transition w-full h-full  uppercase justify-between items-center">
@@ -99,7 +99,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <div className="md:flex justify-between mt-12">
+      <div className="md:flex justify-between mt-4 lg:mt-12">
         <div className="max-md:hidden">
           <p className="text-secondary underline uppercase md:text-xs  lg:text-base 2xl:text-lg largesceen:text-[1.625rem] mb-2">+38 032 297 50 20</p>
           <p className="text-white-100 underline uppercase md:text-xs  lg:text-base 2xl:text-lg largesceen:text-[1.625rem]">8 Lystopadovoho Chynu, Lviv</p>

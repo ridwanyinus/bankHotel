@@ -10,7 +10,6 @@ const config: Config = {
         medium: "730px",
         desktop: "1365px",
         largesceen: "1700px",
-        
         fourk: "2400px",
       },
       colors: {
