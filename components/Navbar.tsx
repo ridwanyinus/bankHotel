@@ -17,7 +17,7 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div className="flex gap-x-16 max-xl:hidden">
+      <div className="flex gap-x-10 2xl:gap-x-16 max-xl:hidden">
         {navItems.map((items, idx: number) => (
           <ul key={`link=${idx}`}>
             <li className="flex">
