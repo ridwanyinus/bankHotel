@@ -6,8 +6,8 @@ import hero from "@/public/space-copenhagen-the-stratford-architonic-rs-8-03-arc
 
 const Hero = () => {
   return (
-    <main className="bg-primary h-full mt-0 py-14 lg:pt-20 px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 ">
-      <div className="grid  md:grid-cols-3 lg:grid-cols-3 mb-16">
+    <main className="bg-primary h-full mt-0 py-14 lg:pt-20  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 ">
+      <div className="grid  md:grid-cols-3 lg:grid-cols-3 mb-16 largesceen:mb-24">
         <div className="md:col-span-2">
           <h1 className="text-white-100 text-[4.7rem] small:text-[5rem] lg:text-[7.5rem] desktop:text-[10.625rem] heading leading-none mb-6 md:mb-8 lg:mb-14 max-md:text-center">
             Bank<span className="text-secondary inline-flex">Hotel</span>
@@ -33,7 +33,7 @@ const Hero = () => {
       </div>
 
       <section className="w-full">
-        <Image src={hero} alt="hero" priority placeholder="blur" className="largesceen:object-fill w-full" />
+        <Image src={hero} alt="hero" priority placeholder="blur" className="object-center md:object-cover lg:object-contain largesceen:object-fill w-full h-96 md:h-[30.438rem]  xl:h-full" />
       </section>
     </main>
   );
