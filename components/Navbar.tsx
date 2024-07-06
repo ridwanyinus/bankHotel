@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Nav */}
-      <section className="xl:hidden">
+      <section className="xl:hidden z-[9999]">
         <div className="">
           {toggleMenu ? (
             <IoClose size={30} color="#FCD043" onClick={() => settoggleMenu(false)} className="relative z-10" />

@@ -9,7 +9,7 @@ import hero from "@/public/space-copenhagen-the-stratford-architonic-rs-8-03-arc
 
 const Hero = () => {
   return (
-    <main className="bg-primary h-full mt-0 py-14 lg:pt-20  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 largesceen:pb-48">
+    <main className="bg-primary mt-0 py-14 lg:pt-20  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 largesceen:pb-48">
       <div className="grid  md:grid-cols-3 lg:grid-cols-3 mb-14 small:mb-16 largesceen:mb-24">
         <div className="md:col-span-2">
           <h1 className="text-white-100 text-[4.7rem] small:text-[5rem] lg:text-[7.5rem] desktop:text-[10.625rem] heading leading-none mb-6 md:mb-8 lg:mb-14 max-md:text-center">
@@ -37,13 +37,13 @@ const Hero = () => {
       </div>
 
       <section className="w-full ">
-        <div className="relative">
+        <div className="relative ">
           <Image
             src={hero}
             alt="hero"
             priority
             placeholder="blur"
-            className="object-center md:object-cover lg:object-contain largesceen:object-fill w-full h-96 md:h-[30.438rem] lg:h-full  xl:h-full "
+            className="object-center md:object-cover lg:object-contain largesceen:object-fill w-full h-96 md:h-[30.438rem] lg:h-full  xl:h-full -z-10"
           />
           <div className="absolute top-0 desktop:top-0 right-0 max-lg:hidden bg-[#313F387A]">
             <div className="flex items-center justify-center">
@@ -88,7 +88,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="absolute -bottom-[6rem] md:-bottom-16 right-0  w-48 h-48 small:m-5">
+          <div className="absolute -bottom-[6rem] md:-bottom-16 right-0  w-48 h-48 small:m-5 lg:hidden">
             <a href="/" className="flex items-center justify-center  no-underline">
               <object type="image/svg+xml" data="/Polygon 5.svg" className="w-[80px] md:w-[120px]">
                 Your browser does not support SVGs
