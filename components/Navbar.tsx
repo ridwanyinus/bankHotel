@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggleMenu, settoggleMenu] = useState(false);
 
   return (
-    <nav className="bg-primary flex px-[1.9rem] pt-5 justify-between items-center mb-0">
+    <nav className="bg-primary flex px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 pt-5 justify-between items-center mb-0 ">
       <div>
         <a href="/" className="text-white-100 capitalize lg:text-base desktop:text-xl leading-none font-medium z-10 relative">
           BankHotel
@@ -48,14 +48,14 @@ const Navbar = () => {
                 {navItems.map((items, idx: number) => (
                   <ul key={`link=${idx}`}>
                     <li className="flex  px-4 py-1 last:mb-4">
-                      <a href={items.link} className="text-3xl transition-all text-left leading-none text-secondary font-medium">
+                      <a href={items.link} className="text-2xl xs:text-3xl transition-all text-left leading-none text-secondary font-medium">
                         {items.name}
                       </a>
                     </li>
                   </ul>
                 ))}
-                <p className="text-center text-white-100 text-xl uppercase pt-8">+(38) 032 297 50 20</p>
-                <p className="text-center text-white-100 text-xl uppercase pt-4">8 Lystopadovoho Chynu, Lviv</p>
+                <p className="text-center text-white-100 text-base xs:text-xl uppercase pt-8">+(38) 032 297 50 20</p>
+                <p className="text-center text-white-100 text-base xs:text-xl uppercase pt-4">8 Lystopadovoho Chynu, Lviv</p>
 
                 <div className="flex gap-4 justify-center pt-5 *:underline">
                   <a href="/" className=" text-secondary  uppercase  text-xs">

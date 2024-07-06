@@ -96,3 +96,17 @@ h6 {
   -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
+
+@media (max-width: 374px) {
+  .heading {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1900px) {
+  .heading {
+    font-size: 13.75rem;
+  }
+}
