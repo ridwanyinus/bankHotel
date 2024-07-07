@@ -7,7 +7,7 @@ import star8 from "@/public/Star 8.svg";
 
 const Rooms = () => {
   return (
-    <main className="bg-white-100 py-14  lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 desktop:pt-16 2xl:pt-20">
+    <main className="bg-white-100 py-10 lg:py-14  lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 desktop:pt-16 2xl:pt-20">
       <div className="sm:flex justify-between  sm:mt-12">
         <div className="sm:mt-20 xl:mt-0">
           <p className="text-end text-gradient text-sm mb-8 sm:hidden">70 rooms</p>
@@ -22,7 +22,7 @@ const Rooms = () => {
         </div>
       </div>
 
-      <section className="mt-20 flex justify-between flex-col-reverse sm:flex-row">
+      <section className="mt-10 md:mt-20 flex justify-between flex-col-reverse sm:flex-row">
         <div className="flex justify-around flex-col w-fit">
           <Image src={room1} alt="room-1" className="largesceen:w-[17.875rem] xl:w-[13.563rem] max-xl:hidden" />
 
@@ -55,11 +55,20 @@ const Rooms = () => {
           </div>
         </div>
 
-        <div>
-          <Image src={room2} alt="room image" className="lg:w-[22.25rem] desktop:w-[35.75rem] largesceen:w-auto" />
+        <div className="relative ">
+          <Image src={room2} alt="room image" className="lg:w-[22.25rem] desktop:w-[35.75rem] largesceen:h-[52.5rem] largesceen:w-[37.5rem]" />
           <p className="text-primary  leading-[155.556%]  text-opacity-[0.8] text-right tracking-widest my-8 sm:hidden">
             01 <span className="text-[#00000033] ">/ 04</span>
           </p>
+
+          <div className="absolute bottom-0 sm:-bottom-28 xl:bottom-0 right-0  w-48 h-48 small:m-5 ">
+            <a href="/" className="flex items-center justify-center  no-underline">
+              <object type="image/svg+xml" data="/Polygon 5.svg" className="w-[80px] xl:w-[120px]">
+                Your browser does not support SVGs
+              </object>
+              <span className="absolute uppercase text-gradient text-[11px]  xl:text-sm">Book room</span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
