@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="">
       <Navbar />
       <Hero />
       <About />
