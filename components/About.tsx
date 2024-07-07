@@ -8,7 +8,7 @@ import label from "@/public/labelHero.svg";
 
 const About = () => {
   return (
-    <main className="bg-primary mt-0 sm:py-14 relative lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 ">
+    <main className="bg-primary mt-0 max-sm:pb-8 sm:py-14 relative lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 ">
       <Image src={vector14} alt="vector-line" className="absolute right-0 top-0 overflow-hidden  h-full max-lg:hidden" />
       <section className="desktop:pt-28  flex flex-col lg:flex-row justify-between relative z-10">
         <div>
@@ -28,8 +28,8 @@ const About = () => {
             <span className="text-secondary block">About</span> US
           </h1>
 
-          <div className="lg:ml-24 desktop:ml-0 relative  largesceen:mt-20">
-            <h3 className="text-3xl sm:text-[1.75rem] desktop:text-4xl largesceen:text-[3.125rem] text-white-100 tracking-[0.094rem] mb-8 w-fit">High quality</h3>
+          <div className="sm:ml-10  lg:ml-24 desktop:ml-0 relative  largesceen:mt-20">
+            <h3 className="text-3xl sm:text-[1.75rem] desktop:text-4xl largesceen:text-[3.125rem] text-white-100 tracking-[0.094rem] mb-8 w-fit capitalize">High quality</h3>
             <p className="text-white-100 md:text-[0.813rem] desktop:text-base 2xl:text-lg leading-[155.556%] w-[85%] sm:w-[70%] lg:w-[250px] desktop:w-[27.688rem] text-opacity-[0.64]">
               The five-star Bank Hotel was reopened to visitors in 2016. The building was renovated and modernized to meet the expectations of the most demanding guests. We offer luxurious rooms,
               numerous facilities, and exceptional service.
