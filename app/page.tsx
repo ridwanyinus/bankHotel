@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Rooms from "@/components/Rooms";
 import Facilities from "@/components/Facilities";
+import Gallery from "@/components/Gallery";
 export default function Home() {
   return (
     <main className="">
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Rooms />
       <Facilities />
+      <Gallery />
     </main>
   );
 }

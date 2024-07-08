@@ -97,13 +97,7 @@ h6 {
   animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-/* .polygon {
-  background: url(../public/Polygon\ 5.svg);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-repeat: no-repeat;
-} */
+
 .polygon {
   width: 100%;
   height: 100%;
