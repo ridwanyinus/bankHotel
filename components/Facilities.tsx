@@ -5,6 +5,8 @@ import image1 from "@/public/facility1.png";
 import image2 from "@/public/facility2.png";
 import star8 from "@/public/Star 8.svg";
 import label from "@/public/labelF.svg";
+import btn from "@/public/buttonroom.svg";
+import ice from "@/public/space-copenhagen-the-stratford-architonic-jw4-04-arcit18 1.png";
 
 const Facilities = () => {
   return (
@@ -54,6 +56,29 @@ const Facilities = () => {
             alt="label"
             className="absolute sm:-top-6 sm:-left-6 desktop:-top-12 largesceen:-top-20 desktop:-left-12 largesceen:-left-20  sm:w-[3rem] desktop:w-[6rem] largesceen:w-auto"
           />
+        </div>
+      </section>
+
+      <section className="flex flex-col sm:flex-row justify-between sm:items-center py-10 lg:py-14 px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 sm:pt-16 desktop:pt-28 largesceen:pt-44">
+        <div>
+          <a href="/" className="w-[5rem] desktop:w-[7.375rem] largesceen:w-auto hidden lg:block rotate-90">
+            <Image src={btn} alt="btn" />
+          </a>
+        </div>
+
+        <div>
+          <h1 className="text-4xl sm:text-[3rem] lg:text-[3.5rem] xl:text-[5rem] text-gradient capitalize leading-[100%] tracking-[2.4px] max-sm:ml-[35%]">01</h1>
+          <h1 className="text-4xl sm:text-[3rem] lg:text-[3.5rem] xl:text-[5rem] text-gradient capitalize leading-[100%] tracking-[2.4px] mt-8 sm:mt-[10%] lg:mt-[20%] desktop:mt-[30%] largesceen:mt-[40%] mb-8 sm:mb-10 ">
+            Ice <br /> restaurant
+          </h1>
+
+          <p className="text-gradient text-[0.813rem] desktop:text-base 2xl:text-lg leading-[155.556%] w-[83%] sm:w-[70%] lg:w-[250px] desktop:w-[27.625rem] text-opacity-[0.8] mb-8 sm:mb-0">
+            The hotel’s exclusive infrastructure is complemented by the unique atmosphere of the Safe Restaurant. Author’s menu, extensive wine card, and live music will set you for the correct mood.
+          </p>
+        </div>
+
+        <div>
+          <Image src={ice} alt="ice room" className="lg:w-[22.25rem] desktop:w-[28.313rem] largesceen:w-[37.5rem] " />
         </div>
       </section>
     </main>
