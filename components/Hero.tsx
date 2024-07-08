@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="h-full flex lg:flex-col justify-between md:gap-x-10 lg:gap-x-0 lg:ml-20 2xl:ml-0">
           <div className="flex justify-between">
             <div className="text-white-100 lg:text-sm  2xl:text-[1.375rem] uppercase border border-white-100 border-opacity-[0.32] rounded-full md:px-5   2xl:py-5 2xl:px-10 flex  items-center gap-x-4 2xl:gap-8 leading-none max-lg:hidden">
-              <Image src={star8} alt="star" className="max-2xl:w-[30px]" /> since 1973
+              <Image src={star8} alt="star" className="max-2xl:w-[30px] h-auto" /> since 1973
             </div>
 
             <a href="/" className="md:w-[45px] 2xl:w-[4.375rem] max-md:hidden">

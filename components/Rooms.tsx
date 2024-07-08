@@ -7,7 +7,7 @@ import star8 from "@/public/Star 8.svg";
 
 const Rooms = () => {
   return (
-    <main className="bg-white-100 py-10 lg:py-14  lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 desktop:pt-16 2xl:pt-20">
+    <main id="rooms" className="bg-white-100 py-10 lg:py-14  lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 desktop:pt-16 2xl:pt-20 desktop:pb-20 largesceen:pb-36">
       <div className="sm:flex justify-between  sm:mt-12">
         <div className="sm:mt-20 xl:mt-0">
           <p className="text-end text-gradient text-sm mb-8 sm:hidden">70 rooms</p>
@@ -33,7 +33,7 @@ const Rooms = () => {
 
         <div className="flex flex-col justify-around">
           <div className="text-gradient lg:text-sm  2xl:text-[1.375rem] uppercase border border-primary border-opacity-[0.32] rounded-full md:px-5 py-1  2xl:py-5 2xl:px-10 flex  items-center gap-x-4 2xl:gap-8 leading-none max-lg:hidden w-fit">
-            <Image src={star8} alt="star" className="max-2xl:w-[30px]" /> since 1973
+            <Image src={star8} alt="star" className="max-2xl:w-[30px] h-auto" /> since 1973
           </div>
 
           <div className="relative  largesceen:mt-20">
