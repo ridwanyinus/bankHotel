@@ -72,7 +72,7 @@ const Gallery = () => {
       </p>
 
       <div className="pt-24 hidden md:block">
-        <h1 className="text-[#FFFCF61F] leading-[8.75rem] md:text-6xl  2xl:text-[7.5rem]">
+        <h1 className="text-[#FFFCF61F] leading-[8.75rem] md:text-6xl desktop:text-[6.25rem]  2xl:text-[7.5rem]">
           Bank hotel <span className="text-white-100">Bank__hotel©</span> Bank hotel Bank hotel Bank hotel Bank hotel Bank hotel Bank hotel
         </h1>
       </div>
