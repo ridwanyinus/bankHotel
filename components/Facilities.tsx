@@ -135,7 +135,7 @@ const Facilities = () => {
         </div>
 
         <div>
-          <Image src={wine} alt="ice room" className="lg:w-[22.25rem] desktop:w-[28.313rem] largesceen:w-[37.5rem] h-[26.5rem] largesceen:h-full" priority />
+          <Image src={wine} alt="ice room" className="lg:w-[22.25rem] desktop:w-[28.313rem] largesceen:w-[37.5rem] h-[26.5rem] largesceen:h-full object-cover" priority />
         </div>
       </section>
       <Image src={divider} alt="diver" className="w-[97%] block mx-auto" />
