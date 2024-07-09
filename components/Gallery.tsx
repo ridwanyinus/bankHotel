@@ -7,6 +7,8 @@ const Gallery = () => {
         Art & Congress <br />
         hall
       </p>
+
+      <p>Hey</p>
     </main>
   );
 };
