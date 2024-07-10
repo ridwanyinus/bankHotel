@@ -44,7 +44,7 @@ const Navbar = () => {
 
           {toggleMenu && (
             <div className="flex w-full">
-              <div className="absolute overflow-hidden  w-full h-screen left-0 right-0 top-0  bg-primary  scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12">
+              <div className="fixed overflow-hidden  w-full h-screen left-0 right-0 top-0  bg-primary  scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12">
                 {navItems.map((items, idx: number) => (
                   <ul key={`link=${idx}`}>
                     <li className="flex  px-4 py-1 last:mb-4">
