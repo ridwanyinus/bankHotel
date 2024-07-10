@@ -4,7 +4,6 @@ import Image from "next/image";
 import star8 from "@/public/Star 8.svg";
 import vector4 from "@/public/Vector 4.svg";
 import divider from "@/public/Rectangle 68.svg";
-import polygon from "@/public/Polygon 5.svg";
 import hero from "@/public/space-copenhagen-the-stratford-architonic-rs-8-03-arcit18 1.png";
 
 const Hero = () => {

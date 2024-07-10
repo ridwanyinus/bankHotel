@@ -11,7 +11,7 @@ const Rooms = () => {
       <div className="sm:flex justify-between  sm:mt-12">
         <div className="sm:mt-20 xl:mt-0">
           <p className="text-end text-gradient text-sm mb-8 sm:hidden">70 rooms</p>
-          <h2 className="text-gradient uppercase text-[3.2rem] leading-none lg:text-[6.25rem] desktop:text-[7.813rem] largesceen:text-[9.375rem] ">
+          <h2 className="text-gradient uppercase text-5xl xs:text-[3.2rem] leading-none lg:text-[6.25rem] desktop:text-[7.813rem] largesceen:text-[9.375rem] ">
             Rooms <br className="hidden sm:block" /> & apartments
           </h2>
         </div>

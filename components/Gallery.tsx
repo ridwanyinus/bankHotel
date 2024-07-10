@@ -59,7 +59,7 @@ const Gallery = () => {
           <Image
             src={gallery5}
             alt="gallery-5 image"
-            className="max-sm:w-[95%] max-sm:h-[7.688rem] lg:min-w-[20.688rem] lg:h-[10rem]  desktop:w-[22.938rem] xl:h-[13.375rem] 2xl:w-[22rem] largesceen:w-[27.688rem] largesceen:h-[17.75rem] object-cover pr-5 md:pr-[1.9rem] largesceen:pr-14 fourk:pr-44 fourk:w-[35rem] absolute bottom-0 sm:-bottom-48"
+            className="max-sm:w-[95%] max-sm:h-[7.688rem] lg:min-w-[20.688rem] lg:h-[10rem]  desktop:w-[22.938rem] xl:h-[13.375rem] 2xl:w-[22rem] largesceen:w-[27.688rem] largesceen:h-[17.75rem] object-cover pr-5 md:pr-[1.9rem] largesceen:pr-14 fourk:pr-44 fourk:w-[35rem] absolute bottom-0 md:-bottom-48"
           />
         </div>
       </section>
