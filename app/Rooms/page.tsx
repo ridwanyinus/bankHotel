@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import RoomHero from "./RoomHero";
 import Image from "next/image";
+import best from "@/public/space-copenhagen-the-stratford-architonic-2-ed-reeve-24-arcit18 1.png";
 import star from "@/public/Star 8.svg";
 const Rooms = () => {
   return (
@@ -27,6 +28,13 @@ const Rooms = () => {
             The Superior twin would perfectly match the needs of those who plan to stay long. The bright and airy room is equipped with superior soft Italian furniture. Large windows open a beautiful
             view to the historical part of the city. Contemporary interior design and comfortable beds will make your stay cozy and delightful.
           </p>
+        </div>
+      </section>
+
+      <section className="bg-primary desktop:py-28 px-5 md:px-[1.9rem] desktop:px-28 largesceen:px-44">
+        <p className="text-secondary sm:text-lg md:text-2xl desktop:text-[2.5rem] capitalize">Premier Standard</p>
+        <div className="pt-10 sm:pt-14 md:pt-16 desktop:pt-20 largesceen:pt-28 flex justify-center">
+          <Image src={best} alt="diver" className="largesceen:w-full h-[30.5rem] sm:h-auto xl:h-[45.75rem] desktop:h-auto largesceen:h-[55.75rem] mx-auto" priority placeholder="blur" />
         </div>
       </section>
     </main>
