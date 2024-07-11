@@ -4,7 +4,7 @@ import btn from "@/public/button - default.svg";
 import Image from "next/image";
 const RoomHero = () => {
   return (
-    <main className="pb-20 lg:pb-28 largesceen:pb-44 overflow-hidden">
+    <main className="sm:pb-20 lg:pb-28 largesceen:pb-44 overflow-hidden">
       <section className="relative w-full  h-full max-sm:h-[60vh]">
         <Image
           src={best}
