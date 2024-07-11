@@ -11,12 +11,12 @@ import { IoIosSend } from "react-icons/io";
 import DateTimePicker from "./DateTimePicker";
 
 const Footer = () => {
-     useEffect(() => {
-       AOS.init({
-         duration: 400,
-         easing: "ease",
-       });
-     }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease",
+    });
+  }, []);
   return (
     <footer
       data-aos="fade-up"
@@ -95,7 +95,7 @@ const Footer = () => {
             </details>
 
             <div className="sm:w-44  lg:w-[11rem] desktop:w-[15.5rem]  desktop:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem] flex  items-center justify-center bg-primary hover:bg-[#28332D]">
-              <a href="/" className="text-white uppercase py-8 lg:py-[2rem] largesceen:py-[9rem] text-center text-sm 2xl:text-base  h-full w-full mx-auto block ">
+              <a href="/Rooms" className="text-white uppercase py-8 lg:py-[2rem] largesceen:py-[9rem] text-center text-sm 2xl:text-base  h-full w-full mx-auto block ">
                 book room
               </a>
             </div>

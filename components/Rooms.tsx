@@ -1,19 +1,104 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import AOS from "aos";
 import Image from "next/image";
 import room1 from "@/public/space-copenhagen-the-stratford-architonic-rs-10-28-arcit18 1.png";
 import room2 from "@/public/space-copenhagen-the-stratford-architonic-rs-11-30-arcit18 1.png";
 import btn from "@/public/buttonroom.svg";
 import star8 from "@/public/Star 8.svg";
+import Swal from "sweetalert2";
 
 const Rooms = () => {
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const popupRef = useRef<HTMLDivElement>(null);
+
+  const togglePopup = () => {
+    setIsPopupVisible(!isPopupVisible);
+  };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
+      setIsPopupVisible(false);
+    }
+  };
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    Swal.fire({
+      title: "Submit your name and email",
+      html: `
+        <input id="swal-input1" class="swal2-input" placeholder="Name" />
+        <input id="swal-input2" class="swal2-input" placeholder="Email" />
+      `,
+      showCancelButton: true,
+      confirmButtonText: "Submit",
+      preConfirm: () => {
+        const name = (document.getElementById("swal-input1") as HTMLInputElement).value;
+        const email = (document.getElementById("swal-input2") as HTMLInputElement).value;
+        if (!name || !email) {
+          Swal.showValidationMessage(`Please enter both name and email`);
+          return false;
+        }
+        return { name: name, email: email };
+      },
+      allowOutsideClick: () => !Swal.isLoading(),
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const swalWithTailwindButtons = Swal.mixin({
+          customClass: {
+            confirmButton: "bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#1B3B36] mr-2",
+            cancelButton: "bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700",
+          },
+          buttonsStyling: true,
+        });
+
+        swalWithTailwindButtons
+          .fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Yes, book it!",
+            cancelButtonText: "No, cancel!",
+            reverseButtons: true,
+          })
+          .then((confirmResult) => {
+            if (confirmResult.isConfirmed) {
+              swalWithTailwindButtons
+                .fire({
+                  title: "Room Booked Successfully!",
+                  text: `Your room has been booked. We look forward to welcoming you, ${result.value.name}.`,
+                  icon: "success",
+                })
+                .then(() => {
+                  setIsPopupVisible(false);
+                });
+            } else if (confirmResult.dismiss === Swal.DismissReason.cancel) {
+              swalWithTailwindButtons.fire({
+                title: "Cancelled",
+                text: "Your booking has been cancelled.",
+                icon: "error",
+              });
+            }
+          });
+      }
+    });
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   useEffect(() => {
     AOS.init({
       duration: 400,
       easing: "ease",
     });
   }, []);
+
   return (
     <main
       data-aos="fade-up"
@@ -77,12 +162,12 @@ const Rooms = () => {
           </p>
 
           <div className="absolute bottom-0 sm:-bottom-28 xl:bottom-0 right-0  w-48 h-48 small:m-5 label">
-            <a href="/" className="flex items-center justify-center  no-underline">
+            <button type="button" onClick={handleSubmit} className="cursor-pointer flex items-center justify-center  no-underline">
               <object type="image/svg+xml" data="/Polygon 5.svg" className="w-[80px] xl:w-[120px]">
                 Your browser does not support SVGs
               </object>
               <span className="absolute uppercase text-gradient text-[11px]  xl:text-sm">Book room</span>
-            </a>
+            </button>
           </div>
         </div>
       </section>

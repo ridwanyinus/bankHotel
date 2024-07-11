@@ -88,7 +88,7 @@ const Hero = () => {
               </details>
 
               <div className="lg:w-[15.5rem] lg:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem] flex  items-center justify-center bg-secondary hover:bg-[#FCC000]">
-                <a href="/" className="text-gradient uppercase  text-center text-sm 2xl:text-base py-14   w-full mx-auto block ">
+                <a href="/Rooms" className="text-gradient uppercase  text-center text-sm 2xl:text-base py-14   w-full mx-auto block ">
                   book room
                 </a>
               </div>

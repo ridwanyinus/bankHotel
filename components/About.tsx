@@ -12,7 +12,7 @@ const About = () => {
 
 
   return (
-    <main  id="about" className=" bg-primary mt-0 max-sm:pb-8 sm:py-14 relative lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44  desktop:pb-20 largesceen:pb-36"  >
+    <main id="about" className=" bg-primary mt-0 max-sm:pb-8 sm:py-14 relative lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44  desktop:pb-20 largesceen:pb-36">
       <Image src={vector14} alt="vector-line" className="absolute right-0 top-0 overflow-hidden  h-full max-lg:hidden" />
       <section className="desktop:pt-28  flex flex-col lg:flex-row justify-between relative z-10">
         <div>
@@ -56,7 +56,7 @@ const About = () => {
             />
           </div>
           <div className="w-48 h-48  hidden xl:block">
-            <a href="/" className="flex items-center justify-center text-white-100 no-underline w-full h-full">
+            <a href="#rooms" className="flex items-center justify-center text-white-100 no-underline w-full h-full">
               <object type="image/svg+xml" data="/Polygon 2.svg" className="xl:w-[8.375rem] largesceen:w-[12.5rem]">
                 Your browser does not support SVGs
               </object>
