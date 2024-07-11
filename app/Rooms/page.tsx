@@ -4,6 +4,7 @@ import RoomHero from "./RoomHero";
 import Image from "next/image";
 import best from "@/public/space-copenhagen-the-stratford-architonic-2-ed-reeve-24-arcit18 1.png";
 import star from "@/public/Star 8.svg";
+import Footer from "@/components/Footer";
 const Rooms = () => {
   return (
     <main>
@@ -37,6 +38,10 @@ const Rooms = () => {
           <Image src={best} alt="diver" className="largesceen:w-full h-[30.5rem] sm:h-auto xl:h-[45.75rem] desktop:h-auto largesceen:h-[55.75rem] mx-auto" priority placeholder="blur" />
         </div>
       </section>
+
+      <section className="bg-white-100 desktop:py-28 px-5 md:px-[1.9rem] desktop:px-28 largesceen:px-44"></section>
+
+      <Footer />
     </main>
   );
 };

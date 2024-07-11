@@ -9,7 +9,7 @@ const RoomHero = () => {
         <Image
           src={best}
           alt="diver"
-          className="absolute  top-0 right-0  largesceen:w-full desktop:pb-44 h-[29.438rem] lg:h-[30.438rem] xl:h-[45.75rem] desktop:h-auto largesceen:h-[80.188rem] max-sm:object-cover"
+          className="absolute  top-0 right-0  largesceen:w-full desktop:pb-44 h-[30.438rem] lg:h-[30.438rem] xl:h-[45.75rem] desktop:h-auto largesceen:h-[80.188rem]"
           priority
           placeholder="blur"
         />
