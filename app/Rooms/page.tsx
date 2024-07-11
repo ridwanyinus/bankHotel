@@ -16,7 +16,7 @@ const Rooms = () => {
         <RoomHero />
       </section>
 
-      <section className="bg-primary py-28 px-5 md:px-[1.9rem] desktop:px-28 largesceen:px-44 ">
+      <section className="bg-primary py-12 sm:py-28 px-5 md:px-[1.9rem] desktop:px-28 largesceen:px-44 ">
         <div className="text-white-100 lg:text-sm  2xl:text-[1.375rem] uppercase border border-white-100 border-opacity-[0.32] rounded-full px-3 md:px-5 py-2  2xl:py-5 2xl:px-10 flex  items-center gap-x-4 2xl:gap-8 leading-none  w-fit">
           <Image src={star} alt="star" className="max-2xl:w-[30px] h-auto animi-1" /> since 1973
         </div>
