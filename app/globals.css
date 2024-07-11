@@ -106,19 +106,7 @@ h6 {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 374px) {
-  .heading {
-    font-size: 4rem;
-    width: 100%;
-    text-align: center;
-  }
-}
 
-@media (min-width: 1900px) {
-  .heading {
-    font-size: 13.75rem;
-  }
-}
 
 .navbar {
   transition: all 0.3s ease;
@@ -150,11 +138,7 @@ h6 {
   color: #1b3b36;
 }
 
-@media (max-width: 1280px) {
-  .is-sticky {
-    display: none;
-  }
-}
+
 
 .label {
   animation: banner_animi_2 linear 3s infinite alternate;
@@ -199,5 +183,26 @@ h6 {
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 1280px) {
+  .is-sticky {
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  .heading {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1900px) {
+  .heading {
+    font-size: 13.75rem;
   }
 }
