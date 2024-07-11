@@ -28,17 +28,21 @@ const DateTimePicker: React.FC<DateTimePickerProps> = ({ buttonText, notificatio
 
   return (
     <div className="flex flex-col items-center justify-center p-4 max-w-lg mx-auto border border-gray-300 rounded-lg bg-gray-50 pb-2">
-      <div className="w-full mb-4">
-        <h3 className="text-lg font-semibold mb-2">CHOOSE DATE</h3>
-        <DatePicker selected={selectedDate} onChange={(date: Date | null) => setSelectedDate(date)} inline className="w-full" />
-      </div>
-      <div className="w-full mb-4">
-        <h3 className="text-lg font-semibold mb-2">CHOOSE TIME</h3>
-        <TimePicker onChange={(value: string | null) => setSelectedTime(value)} value={selectedTime} disableClock className="w-full" />
-      </div>
-      <button className="w-full py-2 mt-4 bg-primary text-white-100 font-semibold rounded hover:bg-[#28332D]" onClick={handleButtonClick}>
-        {buttonText}
-      </button>
+      {!showNotification && (
+        <>
+          <div className="w-full mb-4">
+            <h3 className="text-lg font-semibold mb-2">CHOOSE DATE</h3>
+            <DatePicker selected={selectedDate} onChange={(date: Date | null) => setSelectedDate(date)} inline className="w-full" />
+          </div>
+          <div className="w-full mb-4">
+            <h3 className="text-lg font-semibold mb-2">CHOOSE TIME</h3>
+            <TimePicker onChange={(value: string | null) => setSelectedTime(value)} value={selectedTime} disableClock className="w-full" />
+          </div>
+          <button className="w-full py-2 mt-4 bg-primary text-white-100 font-semibold rounded hover:bg-[#28332D]" onClick={handleButtonClick}>
+            {buttonText}
+          </button>
+        </>
+      )}
 
       {showNotification && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">

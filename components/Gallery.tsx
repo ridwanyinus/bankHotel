@@ -7,8 +7,14 @@ import gallery3 from "@/public/space-copenhagen-the-stratford-architonic-jw-8-18
 import gallery4 from "@/public/space-copenhagen-the-stratford-architonic-jw-2-16-arcit18 1.png";
 import gallery5 from "@/public/space-copenhagen-the-stratford-architonic-rs-4-26-arcit18 1.png";
 import polygon from "@/public/Polygon 7.svg";
+import { InfiniteMovingCards } from "./infinite-moving-cards";
 
 const Gallery = () => {
+  const quotes = [
+    {
+      quote: "Bank hotel Bank__hotel© Bank hotel Bank hotel Bank hotel Bank hotel Bank hotel Bank hotel",
+    },
+  ];
   return (
     <main className="bg-primary py-12 small:pt-32 lg:py-24 pt-24 sm:pt-36 lg:pt-48 desktop:pt-60 2xl:pt-72 largesceen:pt-80 ">
       <div className="flex relative">
@@ -16,7 +22,7 @@ const Gallery = () => {
           Art & Congress <br />
           hall
         </p>
-        <Image src={label} alt="label" className=" mx-auto w-[3.125rem] md:w-[4.375rem] desktop:w-[6rem] largesceen:w-[9.375rem]" />
+        <Image src={label} alt="label" className="label mx-auto w-[3.125rem] md:w-[4.375rem] desktop:w-[6rem] largesceen:w-[9.375rem]" />
       </div>
       <h1 className="text-6xl sm:text-8xl md:text-[6.25rem] desktop:text-[7.813rem] largesceen:text-[9.375rem] text-center leading-none   uppercase text-secondary pt-4 largesceen:pt-12">
         our <span className="block sm:inline-flex">Gallery</span>
@@ -71,10 +77,9 @@ const Gallery = () => {
         It is our pleasure to meet your most unrealistic expectations.
       </p>
 
-      <div className="pt-24 hidden md:block">
-        <h1 className="text-[#FFFCF61F] leading-[8.75rem] md:text-6xl desktop:text-[6.25rem]  2xl:text-[7.5rem]">
-          Bank hotel <span className="text-white-100">Bank__hotel©</span> Bank hotel Bank hotel Bank hotel Bank hotel Bank hotel Bank hotel
-        </h1>
+      <div className="pt-8 md:pt-24 ">
+        <InfiniteMovingCards items={quotes} />
+        <InfiniteMovingCards items={quotes} direction="right" />
       </div>
     </main>
   );

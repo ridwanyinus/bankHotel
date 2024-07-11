@@ -33,7 +33,7 @@ const Rooms = () => {
 
         <div className="flex flex-col justify-around">
           <div className="text-gradient lg:text-sm  2xl:text-[1.375rem] uppercase border border-primary border-opacity-[0.32] rounded-full md:px-5 py-1  2xl:py-5 2xl:px-10 flex  items-center gap-x-4 2xl:gap-8 leading-none max-lg:hidden w-fit">
-            <Image src={star8} alt="star" className="max-2xl:w-[30px] h-auto" /> since 1973
+            <Image src={star8} alt="star" className="max-2xl:w-[30px] h-auto animi-1" /> since 1973
           </div>
 
           <div className="relative  largesceen:mt-20">
@@ -61,7 +61,7 @@ const Rooms = () => {
             01 <span className="text-[#00000033] ">/ 04</span>
           </p>
 
-          <div className="absolute bottom-0 sm:-bottom-28 xl:bottom-0 right-0  w-48 h-48 small:m-5 ">
+          <div className="absolute bottom-0 sm:-bottom-28 xl:bottom-0 right-0  w-48 h-48 small:m-5 label">
             <a href="/" className="flex items-center justify-center  no-underline">
               <object type="image/svg+xml" data="/Polygon 5.svg" className="w-[80px] xl:w-[120px]">
                 Your browser does not support SVGs

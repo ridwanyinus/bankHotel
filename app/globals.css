@@ -155,3 +155,49 @@ h6 {
     display: none;
   }
 }
+
+.label {
+  animation: banner_animi_2 linear 3s infinite alternate;
+  -webkit-animation: banner_animi_2 linear 3s infinite alternate;
+}
+
+@keyframes banner_animi_2 {
+  from {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+}
+
+.animi-1 {
+  animation: about_animi_1 linear 40s infinite;
+  -webkit-animation: about_animi_1 linear 40s infinite;
+}
+
+@keyframes about_animi_1 {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}

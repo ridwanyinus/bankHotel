@@ -7,10 +7,11 @@ import star8 from "@/public/Star 5.svg";
 import Image1 from "@/public/jean-philippe-delberghe-T5BF4OyQLwU-unsplash 1.png";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
+import DateTimePicker from "./DateTimePicker";
 
 const Footer = () => {
   return (
-    <footer id="contacts" className="pb-2 sm:pb-4 pt-12 md:pt-16 lg:pt-20 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 desktop:pt-28 2xl:pt-36 largesceen:pb-6 bg-white-100">
+    <footer id="contacts" className="pb-2 sm:pb-6 pt-12 md:pt-16 lg:pt-20 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 desktop:pt-28 2xl:pt-36 largesceen:pb-6 bg-white-100">
       <p className="text-gradient text-2xl sm:text-3xl lg:text-[2.375rem] desktop:text-[3.125rem] largesceen:text-[5rem]   flex  h-full leading-normal w-fit mb-10  sm:mb-16 lg:mb-20 p-3 largesceen:p-5 border-b">
         +38 032 297 50 20
       </p>
@@ -23,7 +24,7 @@ const Footer = () => {
         <div className="">
           <h2 className=" text-gradient uppercase xs:text-[5.25rem] sm:text-[7rem] leading-none lg:text-[8rem] desktop:text-[12.625rem] largesceen:text-[18.75rem] max-sm:absolute">
             <span className="inline-flex gap-4">
-              Get in <Image src={star8} alt="star" className="w-9 sm:w-[4rem] lg:w-[6.25rem] desktop:w-auto  largesceen:h-auto" />{" "}
+              Get in <Image src={star8} alt="star" className="animi-1 w-9 sm:w-[4rem] lg:w-[6.25rem] desktop:w-auto  largesceen:h-auto" />{" "}
             </span>
             <br />
             <span className="text-secondary relative top-0 sm:top-5 desktop:top-12 fourk:left-[90%] left-[20%] sm:left-[60%] lg:left-[80%]">touch</span>
@@ -50,9 +51,12 @@ const Footer = () => {
               </summary>
 
               <div className="absolute  mt-1 px-[6px] py-2 space-y-2 ">
-                <p className=" text-gradient  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-secondary">RUS</p>
-                <p className=" text-gradient  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-secondary">FRA</p>
-                <p className=" text-gradient  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-secondary">DEU</p>
+                <DateTimePicker
+                  buttonText="CHECK IN"
+                  notificationTitle="Check-In Confirmed"
+                  notificationMessage="Your check-in has been confirmed. Please proceed to your room"
+                  notificationButtonText="OK"
+                />
               </div>
             </details>
             <Image src={divider} alt="divider" className="h-[64px] w-auto" />
@@ -67,9 +71,12 @@ const Footer = () => {
               </summary>
 
               <div className="absolute mt-1 px-[6px] py-2 space-y-2 ">
-                <p className=" text-gradient  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-secondary">RUS</p>
-                <p className=" text-gradient  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-secondary">FRA</p>
-                <p className=" text-gradient  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-secondary">DEU</p>
+                <DateTimePicker
+                  buttonText="CHECK OUT"
+                  notificationTitle="Thank You for Staying with Us"
+                  notificationMessage="Your check-out is complete. We hope to see you again soon."
+                  notificationButtonText="Got It"
+                />
               </div>
             </details>
 

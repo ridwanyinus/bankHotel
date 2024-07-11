@@ -26,7 +26,7 @@ const Facilities = () => {
           </div>
 
           <div>
-            <Image src={image2} alt="facility image" className="lg:w-[14.438rem] desktop:w-[20.938rem] largesceen:w-[27.688rem] hidden sm:block" />
+            <Image src={image2} alt="facility image" className="lg:w-[14.438rem] desktop:w-[20.938rem] largesceen:w-[27.688rem] hidden sm:block " />
           </div>
         </div>
 
@@ -36,7 +36,7 @@ const Facilities = () => {
               our <br className="" />
               faci{" "}
               <span className="flex w-fit">
-                <Image src={star8} alt="star" className=" lg:w-[50px] mx-6 sm:mx-8 lg:mx-[4rem] desktop:mx-[5rem] largesceen:mx-[6.875rem] h-auto" /> lities
+                <Image src={star8} alt="star" className=" lg:w-[50px] mx-6 sm:mx-8 lg:mx-[4rem] desktop:mx-[5rem] largesceen:mx-[6.875rem] h-auto animi-1" /> lities
               </span>
             </h2>
 
@@ -58,7 +58,7 @@ const Facilities = () => {
           <Image
             src={label}
             alt="label"
-            className="absolute sm:-top-6 sm:-left-6 desktop:-top-12 largesceen:-top-20 desktop:-left-12 largesceen:-left-20  sm:w-[3rem] desktop:w-[6rem] largesceen:w-auto"
+            className="absolute sm:-top-6 sm:-left-6 desktop:-top-12 largesceen:-top-20 desktop:-left-12 largesceen:-left-20  sm:w-[3rem] desktop:w-[6rem] largesceen:w-auto animi-1"
           />
         </div>
       </section>

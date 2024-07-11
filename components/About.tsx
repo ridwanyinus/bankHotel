@@ -34,7 +34,7 @@ const About = () => {
               The five-star Bank Hotel was reopened to visitors in 2016. The building was renovated and modernized to meet the expectations of the most demanding guests. We offer luxurious rooms,
               numerous facilities, and exceptional service.
             </p>
-            <Image src={label} alt="label" className="absolute w-[5.313rem] lg:hidden top-1 right-6 rotate-90" />
+            <Image src={label} alt="label" className="absolute w-[5.313rem] lg:hidden top-1 right-6 rotate-90 label" />
           </div>
         </div>
 
@@ -48,7 +48,7 @@ const About = () => {
             <Image
               src={label}
               alt="label"
-              className="absolute md:-top-10 md:-left-10 desktop:-top-24 largesceen:-top-28 desktop:-left-[4.5rem] largesceen:-left-24 md:w-[3.125rem] desktop:w-[7.188rem] largesceen:w-auto"
+              className="absolute md:-top-10 md:-left-10 desktop:-top-24 largesceen:-top-28 desktop:-left-[4.5rem] largesceen:-left-24 md:w-[3.125rem] desktop:w-[7.188rem] largesceen:w-auto label"
             />
           </div>
           <div className="w-48 h-48  hidden xl:block">
