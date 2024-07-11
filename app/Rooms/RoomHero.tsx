@@ -1,15 +1,14 @@
 import React from "react";
 import best from "@/public/roomHero.png";
-import btn from "@/public/button - default.svg";
 import Image from "next/image";
 const RoomHero = () => {
   return (
-    <main className="sm:pb-20 lg:pb-28 largesceen:pb-44 overflow-hidden">
+    <main className="sm:pb-20  largesceen:pb-44 overflow-hidden">
       <section className="relative w-full  h-full max-sm:h-[65vh]">
         <Image
           src={best}
           alt="diver"
-          className="absolute  top-0 right-0  largesceen:w-full desktop:pb-44 h-full w-full  sm:h-[30.438rem] lg:h-[30.438rem] xl:h-[45.75rem] desktop:h-auto largesceen:h-[80.188rem]"
+          className="absolute  top-0 right-0  largesceen:w-full desktop:pb-44 h-full w-full  sm:h-[30.438rem] lg:h-[30.438rem] xl:h-[46.75rem] desktop:h-auto largesceen:h-[80.188rem]"
           priority
           placeholder="blur"
         />
@@ -23,7 +22,7 @@ const RoomHero = () => {
           </p>
         </div>
 
-        <div className="absolute right-0 bottom-2 sm:-bottom-44 md:-bottom-28 w-24 sm:w-48 sm:h-48 small:m-5 label">
+        <div className="absolute right-0 bottom-2 sm:-bottom-44 md:-bottom-24 w-24 sm:w-48 sm:h-48 lg:h-fit small:m-5 label">
           <a href="/" className="flex items-center justify-center  no-underline">
             <object type="image/svg+xml" data="/Polygon 5.svg" className="max-xs:h-[60px] xs:w-[80px] md:w-[120px]">
               Your browser does not support SVGs
