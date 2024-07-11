@@ -35,7 +35,7 @@ const Rooms = () => {
       <section className="bg-primary desktop:py-28 px-5 md:px-[1.9rem] desktop:px-28 largesceen:px-44">
         <p className="text-secondary sm:text-lg md:text-2xl desktop:text-[2.5rem] capitalize">Premier Standard</p>
         <div className="pt-10 sm:pt-14 md:pt-16 desktop:pt-20 largesceen:pt-28 flex justify-center">
-          <Image src={best} alt="diver" className="largesceen:w-full h-[30.5rem] sm:h-auto xl:h-[45.75rem] desktop:h-auto largesceen:h-[55.75rem] mx-auto" priority placeholder="blur" />
+          <Image src={best} alt="diver" className="largesceen:w-full h-[27.5rem] sm:h-auto xl:h-[45.75rem] desktop:h-auto largesceen:h-[55.75rem] mx-auto" priority placeholder="blur" />
         </div>
       </section>
 
