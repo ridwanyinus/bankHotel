@@ -4,7 +4,7 @@ import btn from "@/public/button - default.svg";
 import Image from "next/image";
 const RoomHero = () => {
   return (
-    <main className="pb-44 overflow-hidden">
+    <main className="pb-20 lg:pb-28 largesceen:pb-44 overflow-hidden">
       <section className="relative w-full  h-full">
         <Image
           src={best}
@@ -25,7 +25,7 @@ const RoomHero = () => {
 
         <div className="absolute right-0 -bottom-4 xs:-bottom-16 sm:-bottom-44 md:-bottom-28 w-24 sm:w-48 sm:h-48 small:m-5 label">
           <a href="/" className="flex items-center justify-center  no-underline">
-            <object type="image/svg+xml" data="/Polygon 5.svg" className="w-[80px] md:w-[120px]">
+            <object type="image/svg+xml" data="/Polygon 5.svg" className="max-xs:h-[60px] xs:w-[80px] md:w-[120px]">
               Your browser does not support SVGs
             </object>
             <span className="absolute uppercase text-gradient text-[11px] small:text-xs md:text-sm">Book room</span>
