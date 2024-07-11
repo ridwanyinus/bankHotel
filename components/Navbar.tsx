@@ -1,18 +1,34 @@
 "use client";
 import { navItems } from "@/Data";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineAlignLeft } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
-import { useState } from "react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
   const [toggleMenu, settoggleMenu] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(window.scrollY > 50);
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, []);
 
   return (
-    <nav className="bg-primary flex px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 pt-5 justify-between items-center mb-0 ">
+    <nav className={`${scroll ? "is-sticky" : ""} bg-primary flex px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 pt-5 justify-between items-center mb-0`}>
       <div>
-        <a href="/" className="text-white-100 capitalize lg:text-base desktop:text-xl leading-none font-medium z-10 relative">
+        <a href="/" className="ml-4 text-white-100 capitalize lg:text-base desktop:text-xl leading-none font-medium z-10 relative">
           BankHotel
         </a>
       </div>
@@ -21,7 +37,7 @@ const Navbar = () => {
         {navItems.map((items, idx: number) => (
           <ul key={`link=${idx}`}>
             <li className="flex">
-              <a href={items.link} className="text-white-100 text-xs largesceen:text-sm leading-normal font-normal uppercase hover:text-secondary">
+              <a href={items.link} className="text-white-100 text-xs largesceen:text-sm leading-normal font-normal uppercase hover:text-secondary hover:font-semibold">
                 {items.name}
               </a>
             </li>
@@ -30,7 +46,7 @@ const Navbar = () => {
       </div>
 
       <div>
-        <p className="text-xs largesceen:text-base text-white-100 leading-none max-xl:hidden">+38 032 297 50 20</p>
+        <p className="stick text-xs largesceen:text-base text-white-100 leading-none max-xl:hidden">+38 032 297 50 20</p>
       </div>
 
       {/* Mobile Nav */}
@@ -44,7 +60,7 @@ const Navbar = () => {
 
           {toggleMenu && (
             <div className="flex w-full">
-              <div className="fixed overflow-hidden  w-full h-screen left-0 right-0 top-0  bg-primary  scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12">
+              <div className="sticky overflow-hidden  w-full h-screen left-0 right-0 top-0  bg-primary  scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12">
                 {navItems.map((items, idx: number) => (
                   <ul key={`link=${idx}`}>
                     <li className="flex  px-4 py-1 last:mb-4">

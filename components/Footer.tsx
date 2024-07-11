@@ -40,7 +40,7 @@ const Footer = () => {
       <div className="relative pt-8 lg:pt-12">
         <div className="max-sm:hidden bg-white-100 border-[#00000033] border w-fit">
           <div className="flex items-center justify-center">
-            <details className="group block [&_summary::-webkit-details-marker sm:w-44 sm:h-16 lg:w-[11rem]  desktop:w-[15.5rem] lg:h-[2rem] desktop:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem]  hover:bg-gray-950">
+            <details className="group block [&_summary::-webkit-details-marker sm:w-44 sm:h-16 lg:w-[11rem]  desktop:w-[15.5rem] lg:h-[2rem] desktop:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem]  hover:bg-[#313F387A]">
               <summary className="flex cursor-pointer px-10  transition  w-full h-full uppercase justify-between items-center">
                 <span className="text-xs 2xl:text-base text-gradient font-medium leading-[125%] group-hover:text-white-100"> Check in </span>
 
@@ -57,7 +57,7 @@ const Footer = () => {
             </details>
             <Image src={divider} alt="divider" className="h-[64px] w-auto" />
 
-            <details className="group block [&_summary::-webkit-details-marker]:hidden sm:w-44 sm:h-16 lg:w-[11rem] desktop:w-[15.5rem] lg:h-[2rem] desktop:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem] hover:bg-gray-950">
+            <details className="group block [&_summary::-webkit-details-marker]:hidden sm:w-44 sm:h-16 lg:w-[11rem] desktop:w-[15.5rem] lg:h-[2rem] desktop:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem] hover:bg-[#313F387A]">
               <summary className="flex cursor-pointer px-10  transition w-full h-full  uppercase justify-between items-center">
                 <span className="text-xs 2xl:text-base text-gradient font-medium leading-[125%] group-hover:text-white-100"> Check Out </span>
 
@@ -73,7 +73,7 @@ const Footer = () => {
               </div>
             </details>
 
-            <div className="sm:w-44  lg:w-[11rem] desktop:w-[15.5rem]  desktop:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem] flex  items-center justify-center bg-primary hover:bg-slate-900">
+            <div className="sm:w-44  lg:w-[11rem] desktop:w-[15.5rem]  desktop:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem] flex  items-center justify-center bg-primary hover:bg-[#28332D]">
               <a href="/" className="text-white uppercase py-8 lg:py-[2rem] largesceen:py-[9rem] text-center text-sm 2xl:text-base  h-full w-full mx-auto block ">
                 book room
               </a>

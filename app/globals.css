@@ -119,3 +119,39 @@ h6 {
     font-size: 13.75rem;
   }
 }
+
+.navbar {
+  transition: all 0.3s ease;
+  /* Other navbar styles */
+}
+
+.is-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #ffffff;
+  top: 0px;
+  inset-inline-start: 0px;
+  inset-inline-end: 0px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+.is-sticky .stick {
+  color: #1b3b36;
+}
+.is-sticky a {
+  color: #1b3b36;
+}
+
+@media (max-width: 1280px) {
+  .is-sticky {
+    display: none;
+  }
+}

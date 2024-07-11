@@ -5,6 +5,7 @@ import star8 from "@/public/Star 8.svg";
 import vector4 from "@/public/Vector 4.svg";
 import divider from "@/public/Rectangle 68.svg";
 import hero from "@/public/space-copenhagen-the-stratford-architonic-rs-8-03-arcit18 1.png";
+import DateTimePicker from "./DateTimePicker";
 
 const Hero = () => {
   return (
@@ -24,9 +25,9 @@ const Hero = () => {
               <Image src={star8} alt="star" className="max-2xl:w-[30px] h-auto" /> since 1973
             </div>
 
-            <a href="/" className="md:w-[45px] 2xl:w-[4.375rem] max-md:hidden">
+            <button className="md:w-[45px] 2xl:w-[4.375rem] max-md:hidden">
               <Image src={btn} alt="btn" />
-            </a>
+            </button>
           </div>
 
           <p className="max-md:text-center max-md:mx-auto w-[85%] md:w-[13.625rem] lg:w-[90%] xl:w-[21.875rem] text-white-100 text-sm lg:text-base largesceen:text-xl leading-[155.556%] max-md:block max-md:mt-6 max-md:leading-[164.286%]">
@@ -46,7 +47,7 @@ const Hero = () => {
           />
           <div className="absolute top-0 desktop:top-0 right-0 max-lg:hidden bg-[#313F387A]">
             <div className="flex items-center justify-center">
-              <details className="group block [&_summary::-webkit-details-marker  lg:w-[15.5rem] lg:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem]">
+              <details className="group block [&_summary::-webkit-details-marker  lg:w-[15.5rem] lg:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem] open:bg-[#313F387A]">
                 <summary className="flex cursor-pointer px-10  transition  w-full h-full uppercase justify-between items-center">
                   <span className="text-xs 2xl:text-base text-white-100 font-medium leading-[125%]"> Check in </span>
 
@@ -56,14 +57,17 @@ const Hero = () => {
                 </summary>
 
                 <div className="absolute  mt-1 px-[6px] py-2 space-y-2 ">
-                  <p className=" text-white  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-yellow">RUS</p>
-                  <p className=" text-white  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-yellow">FRA</p>
-                  <p className=" text-white  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-yellow">DEU</p>
+                  <DateTimePicker
+                    buttonText="CHECK IN"
+                    notificationTitle="Check-In Confirmed"
+                    notificationMessage="Your check-in has been confirmed. Please proceed to your room"
+                    notificationButtonText="OK"
+                  />
                 </div>
               </details>
               <Image src={divider} alt="divider" className="h-[64px] w-auto" />
 
-              <details className="group block [&_summary::-webkit-details-marker]:hidden  lg:w-[15.5rem] lg:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem]">
+              <details className="group block [&_summary::-webkit-details-marker]:hidden  lg:w-[15.5rem] lg:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem] open:bg-[#313F387A]">
                 <summary className="flex cursor-pointer px-10  transition w-full h-full  uppercase justify-between items-center">
                   <span className="text-xs 2xl:text-base text-white-100 font-medium leading-[125%]"> Check Out </span>
 
@@ -73,13 +77,16 @@ const Hero = () => {
                 </summary>
 
                 <div className="absolute mt-1 px-[6px] py-2 space-y-2 ">
-                  <p className=" text-white  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-yellow">RUS</p>
-                  <p className=" text-white  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-yellow">FRA</p>
-                  <p className=" text-white  font-open text-xs font-bold leading-none tracking-[1.2px] uppercase cursor-pointer hover:text-yellow">DEU</p>
+                  <DateTimePicker
+                    buttonText="CHECK OUT"
+                    notificationTitle="Thank You for Staying with Us"
+                    notificationMessage="Your check-out is complete. We hope to see you again soon."
+                    notificationButtonText="Got It"
+                  />
                 </div>
               </details>
 
-              <div className="lg:w-[15.5rem] lg:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem] flex  items-center justify-center bg-secondary">
+              <div className="lg:w-[15.5rem] lg:h-[6.25rem] 2xl:w-[20rem]  2xl:h-[7.813rem] largesceen:h-[9.375rem] flex  items-center justify-center bg-secondary hover:bg-[#FCC000]">
                 <a href="/" className="text-gradient uppercase  text-center text-sm 2xl:text-base py-14   w-full mx-auto block ">
                   book room
                 </a>
