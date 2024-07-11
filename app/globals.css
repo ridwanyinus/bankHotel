@@ -106,8 +106,6 @@ h6 {
   background-repeat: no-repeat;
 }
 
-
-
 .navbar {
   transition: all 0.3s ease;
   /* Other navbar styles */
@@ -137,8 +135,6 @@ h6 {
 .is-sticky a {
   color: #1b3b36;
 }
-
-
 
 .label {
   animation: banner_animi_2 linear 3s infinite alternate;
@@ -185,7 +181,6 @@ h6 {
     -o-transform: rotate(360deg);
   }
 }
-
 
 @media (max-width: 1280px) {
   .is-sticky {

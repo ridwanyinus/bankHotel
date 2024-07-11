@@ -1,3 +1,4 @@
+import "animate.css";
 import React from "react";
 import btn from "@/public/button - default.svg";
 import Image from "next/image";
@@ -9,9 +10,9 @@ import DateTimePicker from "./DateTimePicker";
 
 const Hero = () => {
   return (
-    <main className="bg-primary mt-0 py-14 lg:pt-20  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44">
+    <main className=" bg-primary mt-0 py-14 lg:pt-20  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44">
       <div className="grid  md:grid-cols-3 lg:grid-cols-3 mb-14 small:mb-16 largesceen:mb-24">
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 animate__animated animate__fadeInLeft">
           <h1 className="text-white-100 text-[4.7rem] small:text-[5rem] lg:text-[7.5rem] desktop:text-[10.625rem] heading leading-none mb-6 md:mb-8 lg:mb-14 max-md:text-center">
             Bank<span className="text-secondary inline-flex">Hotel</span>
           </h1>
@@ -25,7 +26,7 @@ const Hero = () => {
               <Image src={star8} alt="star" className="max-2xl:w-[30px] h-auto animi-1" /> since 1973
             </div>
 
-            <button className="md:w-[45px] 2xl:w-[4.375rem] max-md:hidden">
+            <button className="md:w-[45px] 2xl:w-[4.375rem] max-md:hidden pointer-events-none">
               <Image src={btn} alt="btn" />
             </button>
           </div>
