@@ -9,6 +9,7 @@ import star8 from "@/public/Star 8.svg";
 import Swal from "sweetalert2";
 
 const Rooms = () => {
+  
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
 
