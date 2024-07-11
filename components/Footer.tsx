@@ -1,5 +1,6 @@
-import React from "react";
-import vector from "@/public/VectorY.svg";
+"use client";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
 import vector4 from "@/public/Vector 4.svg";
 import divider from "@/public/Rectangle 68.svg";
 import Image from "next/image";
@@ -10,8 +11,21 @@ import { IoIosSend } from "react-icons/io";
 import DateTimePicker from "./DateTimePicker";
 
 const Footer = () => {
+     useEffect(() => {
+       AOS.init({
+         duration: 400,
+         easing: "ease",
+       });
+     }, []);
   return (
-    <footer id="contacts" className="pb-2 sm:pb-6 pt-12 md:pt-16 lg:pt-20 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 desktop:pt-28 2xl:pt-36 largesceen:pb-6 bg-white-100">
+    <footer
+      data-aos="fade-up"
+      data-aos-delay="0"
+      data-aos-offset="150"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="400"
+      id="contacts"
+      className="pb-2 sm:pb-6 pt-12 md:pt-16 lg:pt-20 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 desktop:pt-28 2xl:pt-36 largesceen:pb-6 bg-white-100">
       <p className="text-gradient text-2xl sm:text-3xl lg:text-[2.375rem] desktop:text-[3.125rem] largesceen:text-[5rem]   flex  h-full leading-normal w-fit mb-10  sm:mb-16 lg:mb-20 p-3 largesceen:p-5 border-b">
         +38 032 297 50 20
       </p>
@@ -22,7 +36,7 @@ const Footer = () => {
 
       <section className="py-8 sm:py-12 lg:py-20 desktop:py-32 largesceen:py-44 flex  justify-between relative w-full">
         <div className="">
-          <h2 className=" text-gradient uppercase xs:text-[5.25rem] sm:text-[7rem] leading-none lg:text-[8rem] desktop:text-[12.625rem] largesceen:text-[18.75rem] max-sm:absolute">
+          <h2 className=" text-gradient uppercase xs:text-[5.25rem] sm:text-[7rem] leading-none lg:text-[8rem] desktop:text-[12.625rem] largesceen:text-[18.75rem] max-sm:absolute" data-aos="fade-up">
             <span className="inline-flex gap-4">
               Get in <Image src={star8} alt="star" className="animi-1 w-9 sm:w-[4rem] lg:w-[6.25rem] desktop:w-auto  largesceen:h-auto" />{" "}
             </span>

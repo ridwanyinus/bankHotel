@@ -1,5 +1,5 @@
-import "animate.css";
-import React from "react";
+
+import "aos/dist/aos.css";
 import Image from "next/image";
 import vector14 from "@/public/about.png";
 import image1 from "@/public/space-copenhagen-the-stratford-architonic-jw-25-12-arcit18 1.png";
@@ -8,10 +8,10 @@ import vector2 from "@/public/Vector 3.svg";
 import label from "@/public/labelHero.svg";
 
 const About = () => {
+
+
   return (
-    <main
-      id="about"
-      className=" bg-primary mt-0 max-sm:pb-8 sm:py-14 relative lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44  desktop:pb-20 largesceen:pb-36">
+    <main  id="about" className=" bg-primary mt-0 max-sm:pb-8 sm:py-14 relative lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44  desktop:pb-20 largesceen:pb-36"  >
       <Image src={vector14} alt="vector-line" className="absolute right-0 top-0 overflow-hidden  h-full max-lg:hidden" />
       <section className="desktop:pt-28  flex flex-col lg:flex-row justify-between relative z-10">
         <div>

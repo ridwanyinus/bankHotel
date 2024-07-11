@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import Image from "next/image";
 import room1 from "@/public/space-copenhagen-the-stratford-architonic-rs-10-28-arcit18 1.png";
 import room2 from "@/public/space-copenhagen-the-stratford-architonic-rs-11-30-arcit18 1.png";
@@ -6,8 +8,21 @@ import btn from "@/public/buttonroom.svg";
 import star8 from "@/public/Star 8.svg";
 
 const Rooms = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <main id="rooms" className="bg-white-100 py-10 lg:py-14  lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 desktop:pt-16 2xl:pt-20 desktop:pb-20 largesceen:pb-36">
+    <main
+      data-aos="fade-up"
+      data-aos-delay="0"
+      data-aos-offset="150"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="400"
+      id="rooms"
+      className="bg-white-100 py-10 lg:py-14  lg:pt-10 w-full h-full  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 desktop:pt-16 2xl:pt-20 desktop:pb-20 largesceen:pb-36">
       <div className="sm:flex justify-between  sm:mt-12">
         <div className="sm:mt-20 xl:mt-0">
           <p className="text-end text-gradient text-sm mb-8 sm:hidden">70 rooms</p>

@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import Image from "next/image";
 import divider from "@/public/divider.png";
 import image1 from "@/public/facility1.png";
@@ -13,8 +15,14 @@ import conference from "@/public/conference.jpg";
 import best from "@/public/space-copenhagen-the-stratford-architonic-2-ed-reeve-24-arcit18 1.png";
 
 const Facilities = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <main className="bg-white-100  w-full h-full">
+    <main data-aos="fade-up" data-aos-delay="0" data-aos-offset="150" data-aos-easing="ease-in-sine" data-aos-duration="400" className="bg-white-100  w-full h-full">
       <Image src={divider} alt="diver" className="w-[97%] block mx-auto" />
       <section className="py-10 lg:py-14  px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 sm:pt-16 desktop:pt-28 largesceen:pt-44 flex flex-col sm:flex-row justify-between">
         <div className="flex flex-col justify-between">
