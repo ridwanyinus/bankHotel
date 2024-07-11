@@ -6,6 +6,7 @@ import image1 from "@/public/space-copenhagen-the-stratford-architonic-jw-25-12-
 import image2 from "@/public/space-copenhagen-the-stratford-architonic-jw-26-11-arcit18 1.png";
 import vector2 from "@/public/Vector 3.svg";
 import label from "@/public/labelHero.svg";
+import labela from "@/public/labela.svg";
 
 const About = () => {
 
@@ -37,7 +38,7 @@ const About = () => {
               The five-star Bank Hotel was reopened to visitors in 2016. The building was renovated and modernized to meet the expectations of the most demanding guests. We offer luxurious rooms,
               numerous facilities, and exceptional service.
             </p>
-            <Image src={label} alt="label" className="absolute w-[5.313rem] lg:hidden top-1 right-6 rotate-90 label" />
+            <Image src={labela} alt="label" className="absolute w-[5.313rem] lg:hidden top-1 right-6  label" />
           </div>
         </div>
 
