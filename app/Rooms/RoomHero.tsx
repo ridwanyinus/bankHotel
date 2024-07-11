@@ -5,11 +5,11 @@ import Image from "next/image";
 const RoomHero = () => {
   return (
     <main className="pb-20 lg:pb-28 largesceen:pb-44 overflow-hidden">
-      <section className="relative w-full  h-full">
+      <section className="relative w-full  h-full max-sm:h-[80vh]">
         <Image
           src={best}
           alt="diver"
-          className="absolute  top-0 right-0  largesceen:w-full desktop:pb-44 h-[30.438rem] lg:h-[30.438rem] xl:h-[45.75rem] desktop:h-auto largesceen:h-[80.188rem]"
+          className="absolute  top-0 right-0  largesceen:w-full desktop:pb-44 h-full sm:h-[30.438rem] lg:h-[30.438rem] xl:h-[45.75rem] desktop:h-auto largesceen:h-[80.188rem]"
           priority
           placeholder="blur"
         />
