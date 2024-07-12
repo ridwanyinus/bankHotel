@@ -72,6 +72,11 @@ const Facilities = () => {
       </section>
 
       <section
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-offset="150"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="400"
         id="restaurant"
         className="flex flex-col sm:flex-row justify-between sm:items-center py-10 lg:py-14 px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 sm:pt-16 desktop:pt-28 largesceen:pt-44">
         <div>
@@ -98,6 +103,11 @@ const Facilities = () => {
       <Image src={divider} alt="diver" className="w-[97%] block mx-auto" />
 
       <section
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-offset="150"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="400"
         id="conference-hall"
         className="flex flex-col sm:flex-row justify-between sm:items-center py-10 lg:py-14 px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 sm:pt-16 desktop:pt-28 largesceen:pt-44">
         <div>
@@ -124,7 +134,13 @@ const Facilities = () => {
       </section>
       <Image src={divider} alt="diver" className="w-[97%] block mx-auto" />
 
-      <section className="flex flex-col sm:flex-row justify-between sm:items-center py-10 lg:py-14 px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 sm:pt-16 desktop:pt-28 largesceen:pt-44">
+      <section
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-offset="150"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="400"
+        className="flex flex-col sm:flex-row justify-between sm:items-center py-10 lg:py-14 px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 sm:pt-16 desktop:pt-28 largesceen:pt-44">
         <div>
           <a href="/" className="w-[5rem] desktop:w-[7.375rem] largesceen:w-auto hidden lg:block rotate-90">
             <Image src={btn} alt="btn" />
@@ -147,7 +163,13 @@ const Facilities = () => {
         </div>
       </section>
 
-      <section className="py-10 lg:py-14 sm:pt-16 desktop:pt-28 largesceen:pt-44 relative w-full  ">
+      <section
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-offset="150"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="400"
+        className="py-10 lg:py-14 sm:pt-16 desktop:pt-28 largesceen:pt-44 relative w-full  ">
         <Image
           src={best}
           alt="diver"

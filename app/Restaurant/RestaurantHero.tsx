@@ -3,6 +3,8 @@ import labela from "@/public/labelr.svg";
 import Image from "next/image";
 import restaurant from "@/public/restaurant1.png";
 import restaurant2 from "@/public/space-copenhagen-the-stratford-architonic-jw-5-17-arcit18 1.png";
+import restaurant3 from "@/public/space-copenhagen-the-stratford-architonic-jw-17-19-arcit18 1.png";
+import restaurant4 from "@/public/space-copenhagen-the-stratford-architonic-jw-2-06-arcit18 1.png";
 
 const RestaurantHero = () => {
   return (
@@ -30,7 +32,7 @@ const RestaurantHero = () => {
         <Image
           src={restaurant2}
           alt="restaurant"
-          className="w-[70%] lg:w-[22.25rem] lg:h-[22.25rem]  desktop:w-[24.125rem] desktop:h-[28.125rem] largesceen:w-[37.5rem] largesceen:h-[37.5rem] object-cover mt-5 md:mt-0"
+          className="w-[70%] lg:w-[22.25rem] lg:h-[22.25rem]  desktop:w-[24.125rem] desktop:h-[28.125rem] largesceen:w-[37.5rem] largesceen:h-[37.5rem]  mt-5 md:mt-0"
         />
       </div>
 
@@ -42,10 +44,37 @@ const RestaurantHero = () => {
           match the tastes of the most demanding clients. Friendly and attentive waiters will ensure that you will enjoy your time in our restaurant.
         </p>
       </div>
-      
-      
-      
-      
+
+      <section className="flex flex-col-reverse md:flex-row justify-between items-center mt-12 sm:mt-20 md:mt-28 xl:mt-32">
+        <div>
+          <Image src={restaurant3} alt="restaurant" className="h-[16.875rem] md:h-full  mb-8 md:w-[12rem] lg:w-[14.438rem] desktop:w-[22.25rem] largesceen:w-full object-cover" />
+
+          <p className="text-secondary text-[0.813rem] desktop:text-base 2xl:text-lg largesceen:text-[1.625rem] leading-[155.556%] w-[63%] sm:w-[250px] desktop:w-[25rem] largesceen:w-[27.625rem] uppercase">
+            All room decoration was made with ecological certified and safe materials.
+          </p>
+        </div>
+
+        <div className="flex flex-col mb-8 md:mb-0">
+          <h1 className="text-white-100 capitalize  text-2xl  xl:text-3xl desktop:text-4xl  largesceen:text-[3.125rem] w-[80%] md:w-[25rem] lg:w-[37.063rem] desktop:w-[43.125rem] largesceen:w-[58.875rem] leading-normal">
+            Once you try our cuisine and service, you shall never want to visit another restaurant.
+          </h1>
+
+          <Image
+            src={restaurant4}
+            alt="restaurant"
+            className=" md:w-[22.188rem] lg:w-[37.938rem] desktop:w-[50.5rem] largesceen:w-[67rem] largesceen:h-[37.188rem] mt-8 md:mt-12 lg:mt-16 desktop:mt-20 largesceen:mt-32"
+          />
+
+          <h1 className="text-white-100 capitalize  text-2xl  xl:text-3xl desktop:text-4xl largesceen:text-[3.125rem]   mt-8 md:mt-12 lg:mt-16 desktop:mt-20  largesceen:mt-32">
+            Spend Your Time <br /> With Us
+          </h1>
+
+          <p className="text-white-100 text-[0.813rem] desktop:text-base 2xl:text-lg leading-[155.556%] w-[80%] small:w-[70%] md:w-[15.625rem] desktop:w-[21.875rem] largesceen:w-[25rem] text-opacity-[0.8] mt-8 lg:mt-10 desktop:mt-12 largesceen:mt-16">
+            If you are looking for an exclusive place to have a romantic dinner, organize a business meeting, or spend an enjoyable evening with friends, visit Safe Restaurant in Bank Hotel. With our
+            delicious meals, unique interior design, and atmosphere of comfort and exquisiteness you shall never want to go to a different restaurant.
+          </p>
+        </div>
+      </section>
     </main>
   );
 };
