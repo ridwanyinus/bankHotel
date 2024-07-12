@@ -5,9 +5,10 @@ import Rooms from "@/components/Rooms";
 import Facilities from "@/components/Facilities";
 import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
-    <main >
+    <main>
       <Navbar />
       <Hero />
       <About />

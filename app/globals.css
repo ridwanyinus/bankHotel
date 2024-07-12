@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: "Miracle";
   src: url("../public/fonts/Miracle\ Personal\ use.otf");
@@ -108,7 +104,6 @@ h6 {
 
 .navbar {
   transition: all 0.3s ease;
-  /* Other navbar styles */
 }
 
 .is-sticky {
@@ -180,6 +175,30 @@ h6 {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
   }
+}
+
+.tf__scroll_btn {
+  animation: scroll_amini linear 2s infinite alternate;
+  -webkit-animation: scroll_amini linear 2s infinite alternate;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+@keyframes scroll_amini {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-scroll_amini {
+  animation: scroll_amini linear 2s infinite alternate;
+  -webkit-animation: scroll_amini linear 2s infinite alternate;
 }
 
 @media (max-width: 1280px) {
