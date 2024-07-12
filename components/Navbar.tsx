@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineAlignLeft } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import Link from "next/link";
 
 const Navbar = () => {
   const [toggleMenu, settoggleMenu] = useState(false);
@@ -38,9 +37,9 @@ const Navbar = () => {
         {navItems.map((items, idx: number) => (
           <ul key={`link=${idx}`}>
             <li className="flex">
-              <Link href={items.link} className="text-white-100 text-xs largesceen:text-sm leading-normal font-normal uppercase hover:text-secondary hover:font-semibold">
+              <a href={items.link} className="text-white-100 text-xs largesceen:text-sm leading-normal font-normal uppercase hover:text-secondary hover:font-semibold">
                 {items.name}
-              </Link>
+              </a>
             </li>
           </ul>
         ))}
