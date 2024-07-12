@@ -32,7 +32,7 @@ const ScrollToTop: React.FC = () => {
     <button
       type="button"
       onClick={scrollToTop}
-      className={` max-md:hidden fixed right-12 w-12 h-12 flex items-center justify-center text-white bg-secondary rounded-lg z-50 transition-all duration-1000 ${
+      className={`  fixed right-12 w-12 h-12 flex items-center justify-center text-white bg-secondary rounded-lg z-50 transition-all duration-1000 ${
         isVisible ? "bottom-8 animate-scroll_amini" : "bottom-[-10%] transition-all duration-300"
       } hover:bg-primary`}
       style={{ transitionProperty: "bottom" }}>
