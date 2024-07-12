@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "clsx": "^2.1.1",

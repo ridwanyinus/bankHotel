@@ -106,17 +106,24 @@ h6 {
   transition: all 0.3s ease;
 }
 
+.active {
+  color: #fcd043 !important;
+  font-weight: bold !important;
+}
+
 .is-sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
-  background: #ffffff;
-  top: 0px;
+  z-index: 999;
+  background: #fffcf6;
   inset-inline-start: 0px;
   inset-inline-end: 0px;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -124,11 +131,18 @@ h6 {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
 }
+
 .is-sticky .stick {
   color: #1b3b36;
 }
+
 .is-sticky a {
   color: #1b3b36;
+}
+
+.is-sticky .active {
+  color: #fcd043 !important;
+  font-weight: bold !important;
 }
 
 .label {
@@ -199,6 +213,10 @@ h6 {
 .animate-scroll_amini {
   animation: scroll_amini linear 2s infinite alternate;
   -webkit-animation: scroll_amini linear 2s infinite alternate;
+}
+
+.active {
+  color: #fcd043;
 }
 
 @media (max-width: 1280px) {

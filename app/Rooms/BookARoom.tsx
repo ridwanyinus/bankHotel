@@ -1,6 +1,6 @@
 "use client";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import the AOS CSS
+import "aos/dist/aos.css"; 
 import React, { useEffect, useState, useRef } from "react";
 import Swal from "sweetalert2";
 import bests from "@/public/roomHero.png";

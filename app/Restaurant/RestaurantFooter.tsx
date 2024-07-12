@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import vector4 from "@/public/Vector 4.svg";
 import divider from "@/public/Rectangle 68.svg";
