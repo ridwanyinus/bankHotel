@@ -109,6 +109,8 @@ h6 {
 .active {
   color: #fcd043 !important;
   font-weight: bold !important;
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid #fcd043;
 }
 
 .is-sticky {
