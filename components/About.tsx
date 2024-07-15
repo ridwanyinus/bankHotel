@@ -20,6 +20,7 @@ const About = () => {
             <span className="text-secondary block">About</span> US
           </h1>
           <Image
+            priority
             src={image1}
             alt="image of some of the hotels rooms"
             placeholder="blur"
@@ -44,7 +45,8 @@ const About = () => {
 
         <div className="flex flex-col justify-between items-center">
           <div className="relative">
-            <Image
+            <Image 
+              priority
               src={image2}
               alt="image of some of the hotels rooms"
               className="md:w-[10.313rem]  md:h-[15.5rem] desktop:w-[15.188rem] desktop:h-[20.625rem] largesceen:min-w-[19.625rem] largesceen:min-h-[25.875rem] max-lg:hidden"

@@ -34,7 +34,7 @@ const Facilities = () => {
           </div>
 
           <div>
-            <Image src={image2} alt="facility image" className="lg:w-[14.438rem] desktop:w-[20.938rem] largesceen:w-[27.688rem] hidden sm:block " />
+            <Image src={image2} alt="facility image" className="lg:w-[14.438rem] desktop:w-[20.938rem] largesceen:w-[27.688rem] hidden sm:block" priority />
           </div>
         </div>
 
@@ -49,7 +49,7 @@ const Facilities = () => {
             </h2>
 
             <div>
-              <Image src={image2} alt="facility image" className="lg:w-[14.438rem] desktop:w-[20.938rem] largesceen:w-[27.688rem] sm:hidden" />
+              <Image src={image2} alt="facility image" className="lg:w-[14.438rem] desktop:w-[20.938rem] largesceen:w-[27.688rem] sm:hidden" priority/>
             </div>
           </div>
 
@@ -62,7 +62,7 @@ const Facilities = () => {
         </div>
 
         <div className="relative hidden sm:block">
-          <Image src={image1} alt="facility image" className="lg:w-[14.438rem] desktop:w-[20.938rem] largesceen:w-[27.688rem]" />
+          <Image src={image1} alt="facility image" className="lg:w-[14.438rem] desktop:w-[20.938rem] largesceen:w-[27.688rem]"priority/>
           <Image
             src={label}
             alt="label"

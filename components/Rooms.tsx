@@ -125,7 +125,7 @@ const Rooms = () => {
 
       <section className="mt-10 md:mt-20 flex justify-between flex-col-reverse sm:flex-row">
         <div className="flex justify-around flex-col w-fit">
-          <Image src={room1} alt="room-1" className="largesceen:w-[17.875rem] xl:w-[13.563rem] max-xl:hidden" />
+          <Image src={room1} alt="room-1" className="largesceen:w-[17.875rem] xl:w-[13.563rem] max-xl:hidden"priority/>
 
           <a href="/" className="w-[5rem] desktop:w-[7.375rem] largesceen:w-auto hidden lg:block">
             <Image src={btn} alt="btn" />
@@ -157,7 +157,7 @@ const Rooms = () => {
         </div>
 
         <div className="relative ">
-          <Image src={room2} alt="room image" className="lg:w-[22.25rem] desktop:w-[35.75rem] largesceen:h-[52.5rem] largesceen:w-[37.5rem]" />
+          <Image src={room2} alt="room image" className="lg:w-[22.25rem] desktop:w-[35.75rem] largesceen:h-[52.5rem] largesceen:w-[37.5rem]" priority/>
           <p className="text-primary  leading-[155.556%]  text-opacity-[0.8] text-right tracking-widest my-8 sm:hidden">
             01 <span className="text-[#00000033] ">/ 04</span>
           </p>

@@ -28,11 +28,13 @@ const RestaurantHero = () => {
           src={restaurant}
           alt="restaurant"
           className="w-[80%] md:w-[22.25rem] lg:h-[28.125rem] lg:w-[37.5rem]  desktop:h-[38rem] desktop:w-[55rem] largesceen:h-[50rem] largesceen:w-[76.875rem]"
+          priority
         />
         <Image
           src={restaurant2}
           alt="restaurant"
           className="w-[70%] lg:w-[22.25rem] lg:h-[22.25rem]  desktop:w-[24.125rem] desktop:h-[28.125rem] largesceen:w-[37.5rem] largesceen:h-[37.5rem]  mt-5 md:mt-0"
+          priority
         />
       </div>
 
@@ -47,7 +49,7 @@ const RestaurantHero = () => {
 
       <section className="flex flex-col-reverse md:flex-row justify-between items-center mt-12 sm:mt-20 md:mt-28 xl:mt-32">
         <div>
-          <Image src={restaurant3} alt="restaurant" className="h-[16.875rem] md:h-full  mb-8 md:w-[12rem] lg:w-[14.438rem] desktop:w-[22.25rem] largesceen:w-full object-cover" />
+          <Image src={restaurant3} alt="restaurant" className="h-[16.875rem] md:h-full  mb-8 md:w-[12rem] lg:w-[14.438rem] desktop:w-[22.25rem] largesceen:w-full object-cover" priority />
 
           <p className="text-secondary text-[0.813rem] desktop:text-base 2xl:text-lg largesceen:text-[1.625rem] leading-[155.556%] w-[63%] sm:w-[250px] desktop:w-[25rem] largesceen:w-[27.625rem] uppercase">
             All room decoration was made with ecological certified and safe materials.
@@ -60,6 +62,7 @@ const RestaurantHero = () => {
           </h1>
 
           <Image
+            priority
             src={restaurant4}
             alt="restaurant"
             className=" md:w-[22.188rem] lg:w-[37.938rem] desktop:w-[50.5rem] largesceen:w-[67rem] largesceen:h-[37.188rem] mt-8 md:mt-12 lg:mt-16 desktop:mt-20 largesceen:mt-32"

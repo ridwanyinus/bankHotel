@@ -33,9 +33,10 @@ const Gallery = () => {
       </p>
       <section className="flex pt-8 sm:pt-16 justify-between">
         <div className="flex flex-col justify-between">
-          <Image src={gallery1} alt="Gallery-Image 1" className="max-sm:w-[95%] lg:w-[10.125rem] xl:w-[13rem] desktop:w-[16rem] 2xl:w-[17rem] largesceen:w-[19.5rem] " />
+          <Image src={gallery1} alt="Gallery-Image 1" className="max-sm:w-[95%] lg:w-[10.125rem] xl:w-[13rem] desktop:w-[16rem] 2xl:w-[17rem] largesceen:w-[19.5rem]" priority />
           <Image
             src={gallery2}
+            priority
             alt="Gallery-Image 2"
             className="max-sm:mt-8 max-sm:w-[95%] md:min-w-[10rem] lg:w-[7.875rem] xl:w-[10rem] desktop:w-[15.063rem] 2xl:w-[17rem] largesceen:w-[19.75.rem] fourk:w-[25rem] pl-5 md:pl-[1.9rem] largesceen:pl-14 fourk:pl-44"
           />
@@ -48,6 +49,7 @@ const Gallery = () => {
           </p>
           <Image
             src={gallery3}
+            priority
             alt="Gallery image 3"
             className=" max-sm:hidden sm:w-[20rem] md:w-[25rem] lg:w-[30.125rem] xl:w-[25rem] desktop:w-[43.125rem] 2xl:w-[45rem] largesceen:w-[57.25rem] sm:mx-auto"
           />
@@ -61,9 +63,15 @@ const Gallery = () => {
         </div>
 
         <div className="flex flex-col justify-between items-end relative">
-          <Image src={gallery4} alt="gallery-4 image" className="max-sm:w-[95%]  lg:w-[10.125rem] xl:w-[13rem] desktop:w-[16rem] 2xl:w-[17rem] largesceen:w-[20.125rem] relative max-sm:top-4" />
+          <Image
+            src={gallery4}
+            priority
+            alt="gallery-4 image"
+            className="max-sm:w-[95%]  lg:w-[10.125rem] xl:w-[13rem] desktop:w-[16rem] 2xl:w-[17rem] largesceen:w-[20.125rem] relative max-sm:top-4"
+          />
           <Image
             src={gallery5}
+            priority
             alt="gallery-5 image"
             className="max-sm:w-[95%] max-sm:h-[7.688rem] lg:min-w-[20.688rem] lg:h-[10rem]  desktop:w-[22.938rem] xl:h-[13.375rem] 2xl:w-[22rem] largesceen:w-[27.688rem] largesceen:h-[17.75rem] object-cover pr-5 md:pr-[1.9rem] largesceen:pr-14 fourk:pr-44 fourk:w-[35rem] absolute bottom-0 md:-bottom-48"
           />
