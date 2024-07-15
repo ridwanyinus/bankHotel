@@ -36,7 +36,9 @@ const Footer = () => {
 
       <section className="py-8 sm:py-12 lg:py-20 desktop:py-32 largesceen:py-44 flex  justify-between relative w-full">
         <div className="">
-          <h2 className=" text-gradient uppercase xs:text-[5.25rem] sm:text-[7rem] leading-none lg:text-[8rem] desktop:text-[12.625rem] largesceen:text-[18.75rem] max-sm:absolute" data-aos="fade-up">
+          <h2
+            className=" text-gradient uppercase text-[4.5rem] xs:text-[5.25rem] sm:text-[7rem] leading-none lg:text-[8rem] desktop:text-[12.625rem] largesceen:text-[18.75rem] max-sm:absolute"
+            data-aos="fade-up">
             <span className="inline-flex gap-4">
               Get in <Image src={star8} alt="star" className="animi-1 w-9 sm:w-[4rem] lg:w-[6.25rem] desktop:w-auto  largesceen:h-auto" />{" "}
             </span>
