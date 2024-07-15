@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Miracle", serif;
+  font-family: "Miracle";
   src: url("../public/fonts/Miracle\ Personal\ use.otf");
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica";
   src: url("../public/fonts/HelveticaNeueLTStd-Roman.otf");
   font-style: normal;
 }
