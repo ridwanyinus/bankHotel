@@ -1,14 +1,8 @@
 "use client";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import { cn } from "@/utils/cn";
-import React, { useEffect, useState } from "react";
 
-export const InfiniteMovingCards = ({
-  items,
-  direction = "left",
-  speed = "fast",
-  pauseOnHover = true,
-  className,
-}: {
+interface InfiniteMovingCardsProps {
   items: {
     quote?: string;
     name?: string;
@@ -18,15 +12,14 @@ export const InfiniteMovingCards = ({
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
-}) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
+}
 
-  useEffect(() => {
-    addAnimation();
-  }, []);
+export const InfiniteMovingCards: React.FC<InfiniteMovingCardsProps> = ({ items, direction = "left", speed = "fast", pauseOnHover = true, className }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollerRef = useRef<HTMLUListElement>(null);
   const [start, setStart] = useState(false);
-  function addAnimation() {
+
+  const addAnimation = useCallback(() => {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
@@ -41,8 +34,9 @@ export const InfiniteMovingCards = ({
       getSpeed();
       setStart(true);
     }
-  }
-  const getDirection = () => {
+  }, [direction, speed]);
+
+  const getDirection = useCallback(() => {
     if (containerRef.current) {
       if (direction === "left") {
         containerRef.current.style.setProperty("--animation-direction", "forwards");
@@ -50,8 +44,9 @@ export const InfiniteMovingCards = ({
         containerRef.current.style.setProperty("--animation-direction", "reverse");
       }
     }
-  };
-  const getSpeed = () => {
+  }, [direction]);
+
+  const getSpeed = useCallback(() => {
     if (containerRef.current) {
       if (speed === "fast") {
         containerRef.current.style.setProperty("--animation-duration", "20s");
@@ -61,15 +56,20 @@ export const InfiniteMovingCards = ({
         containerRef.current.style.setProperty("--animation-duration", "80s");
       }
     }
-  };
+  }, [speed]);
+
+  useEffect(() => {
+    addAnimation();
+  }, [addAnimation]);
+
   return (
-    <div ref={containerRef} className={cn("scroller relative   overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]", className)}>
-      <ul ref={scrollerRef} className={cn(" flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap", start && "animate-scroll ", pauseOnHover && "hover:[animation-play-state:paused]")}>
-        {items.map((item, idx) => (
-          <li  key={item.name}>
+    <div ref={containerRef} className={cn("scroller relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]", className)}>
+      <ul ref={scrollerRef} className={cn("flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap", start && "animate-scroll", pauseOnHover && "hover:[animation-play-state:paused]")}>
+        {items.map((item) => (
+          <li key={item.name}>
             <blockquote>
               <div aria-hidden="true" className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 md:h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"></div>
-              <h1 className=" relative  text-white-100 text-opacity-50 text-5xl sm:text-8xl leading-none  md:text-6xl desktop:text-[6.25rem]  2xl:text-[7.5rem]">{item.quote}</h1>
+              <h1 className="relative text-white-100 text-opacity-50 text-5xl sm:text-8xl leading-none md:text-6xl desktop:text-[6.25rem] 2xl:text-[7.5rem]">{item.quote}</h1>
             </blockquote>
           </li>
         ))}

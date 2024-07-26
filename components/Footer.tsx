@@ -116,7 +116,7 @@ const Footer = () => {
           </p>
 
           <p className="text-[0.813rem] md:text-sm text-primary text-opacity-70  pt-8 hidden lg:block">
-            ©2024 All rights reserved. BankHotel <br /> Designed by Ridwan https://ridwanyinus.vercel.app
+            ©2024 All rights reserved. BankHotel <br /> Designed by Ridwan <a href="https://ridwanyinus.is-a.dev">ridwanyinus.is-a.dev</a>
           </p>
         </div>
 
