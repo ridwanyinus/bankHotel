@@ -64,8 +64,8 @@ const Navbar: React.FC = () => {
           )}
 
           {toggleMenu && (
-            <div className="w-full fixed top-0 right-0 h-screen ">
-              <div className=" overflow-hidden w-full  bg-primary scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12">
+            <div className="w-full fixed top-0 right-0 h-screen">
+              <div className=" overflow-hidden w-full h-full bg-primary scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12 pb-3">
                 {navItems.map((item, idx: number) => (
                   <ul key={`link=${idx}`}>
                     <li className="flex px-4 py-1 last:mb-4">
