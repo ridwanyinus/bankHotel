@@ -138,9 +138,8 @@ h6 {
   color: #1b3b36;
 }
 
-
 .is-sticky a {
-  color: #fcd043;
+  color: #1b3b36;
 }
 
 .is-sticky .active {
@@ -222,13 +221,16 @@ h6 {
   color: #fcd043;
 }
 
-
-
 @media (max-width: 374px) {
   .heading {
     font-size: 4rem;
     width: 100%;
     text-align: center;
+  }
+}
+@media (max-width: 1279px) {
+  .is-sticky a {
+    color: #fcd043;
   }
 }
 
