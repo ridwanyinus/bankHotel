@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { AiOutlineAlignLeft } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import { navItems } from "@/Data"; 
+import { navItems } from "@/Data";
 
 const Navbar: React.FC = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`${scroll ? "is-sticky" : ""} bg-primary flex px-5 md:px-[1.9rem] largesceen:px-14 fourk:px-44 pt-5 justify-between items-center mb-0`}>
       <div>
-        <Link href="/" className="ml-4 text-white-100 capitalize lg:text-base desktop:text-xl leading-none font-medium z-10 relative logo">
+        <Link href="/" className="ml-4 text-white-100 capitalize lg:text-base desktop:text-xl leading-none font-medium z-[999] relative logo">
           BankHotel
         </Link>
       </div>
@@ -55,17 +55,17 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Nav */}
-      <section className="xl:hidden z-[9999]">
+      <section className="xl:hidden z-[995]">
         <div>
           {toggleMenu ? (
-            <IoClose size={30} color="#FCD043" onClick={() => setToggleMenu(false)} className="relative z-10" />
+            <IoClose size={30} color="#ffffff" onClick={() => setToggleMenu(false)} className="relative z-10" />
           ) : (
-            <AiOutlineAlignLeft size={30} color="#FFFCF6" onClick={() => setToggleMenu(true)} className="relative z-10" />
+            <AiOutlineAlignLeft size={30} onClick={() => setToggleMenu(true)} className="relative z-10 text-[#FFFCF6] stick" />
           )}
 
           {toggleMenu && (
-            <div className="flex w-full">
-              <div className="absolute overflow-hidden w-full h-screen left-0 right-0 top-0 bg-primary scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12">
+            <div className="w-full fixed top-0 right-0 h-screen ">
+              <div className=" overflow-hidden w-full  bg-primary scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12">
                 {navItems.map((item, idx: number) => (
                   <ul key={`link=${idx}`}>
                     <li className="flex px-4 py-1 last:mb-4">
