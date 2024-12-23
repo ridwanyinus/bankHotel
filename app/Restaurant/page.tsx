@@ -1,4 +1,4 @@
-import React from 'react';
+'use client';
 import Navbars from '@/components/Navbar';
 import RestaurantHero from './RestaurantHero';
 import RestaurantFooter from './RestaurantFooter';
@@ -7,7 +7,7 @@ export const metadata = {
   title: 'Restaurant Bank Hotel - Bank Hotel Website by Ridwan',
 };
 
-const page = () => {
+const index = () => {
   return (
     <main className='bg-primary'>
       <Navbars />
@@ -17,4 +17,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default index;

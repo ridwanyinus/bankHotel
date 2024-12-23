@@ -9,10 +9,6 @@ import star from '@/public/Star 8.svg';
 import Footer from '@/components/Footer';
 import BookARoom from './BookARoom';
 
-export const metadata = {
-  title: 'Rooms Bank Hotel - Bank Hotel Website by Ridwan',
-};
-
 const Rooms = () => {
   useEffect(() => {
     AOS.init({
@@ -21,7 +17,7 @@ const Rooms = () => {
     });
   }, []);
   return (
-    <main>
+    <>
       <section className='pb-3 bg-primary'>
         <Navbar />
       </section>
@@ -56,7 +52,7 @@ const Rooms = () => {
       </section>
 
       <Footer />
-    </main>
+    </>
   );
 };
 
